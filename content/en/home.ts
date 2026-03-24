@@ -4,6 +4,34 @@ export const hero = {
     "We help companies secure their facilities, stabilize their networks, and monitor their operations through modern infrastructure and smart monitoring tools.",
 } as const;
 
+/** Hero slider — paths under /public/images */
+export const heroSlides = [
+  {
+    id: "network-setup",
+    slug: "network-setup",
+    image: "/images/hero-infrastructure.png",
+    title: "Network Infrastructure",
+    subtitle:
+      "Stable, secure connectivity for your business—cabling, switches, Wi‑Fi, and expert troubleshooting.",
+  },
+  {
+    id: "cctv-installation",
+    slug: "cctv-installation",
+    image: "/images/hero-cctv.png",
+    title: "CCTV & Surveillance",
+    subtitle:
+      "Protect your premises with professional cameras, recording, and remote access you can trust.",
+  },
+  {
+    id: "it-support",
+    slug: "it-support",
+    image: "/images/hero-it-support.png",
+    title: "IT Support",
+    subtitle:
+      "Responsive technical support so your team and systems keep running without interruption.",
+  },
+] as const;
+
 export const trustStrip = {
   items: [
     "B2B only — We serve businesses, not individuals",

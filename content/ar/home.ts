@@ -4,6 +4,33 @@ export const hero = {
     "نساعد الشركات على تأمين منشآتها، استقرار شبكاتها، ومراقبة عملياتها عبر بنية تحتية حديثة وأدوات مراقبة ذكية.",
 } as const;
 
+export const heroSlides = [
+  {
+    id: "network-setup",
+    slug: "network-setup",
+    image: "/images/hero-infrastructure.png",
+    title: "البنية التحتية للشبكات",
+    subtitle:
+      "اتصال مستقر وآمن لعملك—كابلات، مبدلات، واي فاي، واستكشاف أعطال احترافي.",
+  },
+  {
+    id: "cctv-installation",
+    slug: "cctv-installation",
+    image: "/images/hero-cctv.png",
+    title: "كاميرات المراقبة والأمن",
+    subtitle:
+      "أمّن منشآتك بكاميرات احترافية وتسجيل ووصول عن بُعد يمكنك الاعتماد عليه.",
+  },
+  {
+    id: "it-support",
+    slug: "it-support",
+    image: "/images/hero-it-support.png",
+    title: "الدعم الفني",
+    subtitle:
+      "دعم فني سريع الاستجابة ليبقى فريقك وأنظمتك تعمل دون انقطاع.",
+  },
+] as const;
+
 export const trustStrip = {
   items: [
     "للشركات فقط — نخدم المؤسسات، وليس الأفراد",

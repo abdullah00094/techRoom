@@ -24,6 +24,8 @@ type Props = {
   className?: string;
   type?: "button" | "submit";
   external?: boolean;
+  /** Fires for both button and link (e.g. close mobile menu before navigation). */
+  onClick?: () => void;
   "aria-label"?: string;
 };
 
@@ -34,6 +36,7 @@ export function Button({
   className = "",
   type = "button",
   external,
+  onClick,
   "aria-label": ariaLabel,
 }: Props) {
   const classes = `${base} ${variants[variant]} ${className}`.trim();
@@ -43,6 +46,7 @@ export function Button({
       <Link
         href={href}
         className={classes}
+        onClick={onClick}
         {...(external && { target: "_blank", rel: "noopener noreferrer" })}
         aria-label={ariaLabel}
       >
@@ -52,7 +56,7 @@ export function Button({
   }
 
   return (
-    <button type={type} className={classes} aria-label={ariaLabel}>
+    <button type={type} className={classes} onClick={onClick} aria-label={ariaLabel}>
       {children}
     </button>
   );

@@ -65,7 +65,7 @@ export function ContactForm({ locale }: Props) {
           type="text"
           required
           autoComplete="name"
-          className="w-full rounded-xl border border-[var(--card-border)] bg-white px-4 py-3 text-[var(--foreground)] placeholder:text-[var(--muted)] focus:border-[var(--accent)] focus:outline-none focus:ring-2 focus:ring-[var(--accent)]/20"
+          className="w-full rounded-xl border border-[var(--card-border)] bg-[var(--card-bg)] px-4 py-3 text-[var(--foreground)] placeholder:text-[var(--muted)] focus:border-[var(--accent)] focus:outline-none focus:ring-2 focus:ring-[var(--accent)]/20"
           placeholder={form.placeholderName}
           aria-invalid={!!errors.name}
         />
@@ -82,7 +82,7 @@ export function ContactForm({ locale }: Props) {
           type="text"
           required
           autoComplete="organization"
-          className="w-full rounded-xl border border-[var(--card-border)] bg-white px-4 py-3 text-[var(--foreground)] placeholder:text-[var(--muted)] focus:border-[var(--accent)] focus:outline-none focus:ring-2 focus:ring-[var(--accent)]/20"
+          className="w-full rounded-xl border border-[var(--card-border)] bg-[var(--card-bg)] px-4 py-3 text-[var(--foreground)] placeholder:text-[var(--muted)] focus:border-[var(--accent)] focus:outline-none focus:ring-2 focus:ring-[var(--accent)]/20"
           placeholder={form.placeholderCompany}
           aria-invalid={!!errors.company}
         />
@@ -99,7 +99,7 @@ export function ContactForm({ locale }: Props) {
           type="tel"
           required
           autoComplete="tel"
-          className="w-full rounded-xl border border-[var(--card-border)] bg-white px-4 py-3 text-[var(--foreground)] placeholder:text-[var(--muted)] focus:border-[var(--accent)] focus:outline-none focus:ring-2 focus:ring-[var(--accent)]/20"
+          className="w-full rounded-xl border border-[var(--card-border)] bg-[var(--card-bg)] px-4 py-3 text-[var(--foreground)] placeholder:text-[var(--muted)] focus:border-[var(--accent)] focus:outline-none focus:ring-2 focus:ring-[var(--accent)]/20"
           placeholder={form.placeholderPhone}
           aria-invalid={!!errors.phone}
         />
@@ -114,7 +114,7 @@ export function ContactForm({ locale }: Props) {
           id="contact-serviceType"
           name="serviceType"
           required
-          className="w-full rounded-xl border border-[var(--card-border)] bg-white px-4 py-3 text-[var(--foreground)] focus:border-[var(--accent)] focus:outline-none focus:ring-2 focus:ring-[var(--accent)]/20"
+          className="w-full rounded-xl border border-[var(--card-border)] bg-[var(--card-bg)] px-4 py-3 text-[var(--foreground)] focus:border-[var(--accent)] focus:outline-none focus:ring-2 focus:ring-[var(--accent)]/20"
           aria-invalid={!!errors.serviceType}
         >
           <option value="">{form.selectService}</option>
@@ -136,7 +136,7 @@ export function ContactForm({ locale }: Props) {
           name="message"
           required
           rows={4}
-          className="w-full rounded-xl border border-[var(--card-border)] bg-white px-4 py-3 text-[var(--foreground)] placeholder:text-[var(--muted)] focus:border-[var(--accent)] focus:outline-none focus:ring-2 focus:ring-[var(--accent)]/20 resize-y min-h-[100px]"
+          className="w-full rounded-xl border border-[var(--card-border)] bg-[var(--card-bg)] px-4 py-3 text-[var(--foreground)] placeholder:text-[var(--muted)] focus:border-[var(--accent)] focus:outline-none focus:ring-2 focus:ring-[var(--accent)]/20 resize-y min-h-[100px]"
           placeholder={form.placeholderMessage}
           aria-invalid={!!errors.message}
         />

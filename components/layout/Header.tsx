@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import type { Locale } from "@/lib/i18n";
 import { localePath } from "@/lib/i18n";
@@ -35,9 +36,17 @@ export function Header({ locale }: Props) {
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between gap-4 px-4 sm:h-18 sm:px-6 lg:px-8">
         <Link
           href={localePath("/", locale)}
-          className="text-xl font-bold tracking-tight text-[var(--primary)] focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)] focus-visible:ring-offset-2 rounded"
+          className="shrink-0 focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--background)] rounded"
+          aria-label={locale === "ar" ? "تيك روم — الصفحة الرئيسية" : "TechRoom Solutions — Home"}
         >
-          TechRoom
+          <Image
+            src="/images/techroom-logo.png"
+            alt=""
+            width={200}
+            height={48}
+            className="h-9 w-auto sm:h-10"
+            priority
+          />
         </Link>
 
         <nav
