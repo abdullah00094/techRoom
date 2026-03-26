@@ -1,13 +1,11 @@
 import Link from "next/link";
 import type { Locale } from "@/lib/i18n";
-import { whatsappNumber, whatsappMessage } from "@/content/en/navigation";
-import { whatsappMessage as whatsappMessageAr } from "@/content/ar/navigation";
+import { getWhatsAppUrl } from "@/lib/whatsapp";
 
 type Props = { locale: Locale };
 
 export function WhatsAppButton({ locale }: Props) {
-  const msg = locale === "ar" ? whatsappMessageAr : whatsappMessage;
-  const waUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(msg)}`;
+  const waUrl = getWhatsAppUrl(locale);
 
   return (
     <Link

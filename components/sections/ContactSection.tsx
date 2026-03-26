@@ -2,11 +2,11 @@ import Link from "next/link";
 import { Section, SectionHeader } from "@/components/ui/Section";
 import { ContactForm } from "@/components/forms/ContactForm";
 import { localePath } from "@/lib/i18n";
-import { whatsappNumber, whatsappMessage, contactEmail, contactPhone } from "@/content/en/navigation";
-import { whatsappMessage as whatsappMessageAr } from "@/content/ar/navigation";
+import { contactEmail, contactPhone } from "@/content/en/navigation";
 import type { Locale } from "@/lib/i18n";
 import { contactSection as contentEn } from "@/content/en/home";
 import { contactSection as contentAr } from "@/content/ar/home";
+import { getWhatsAppUrl } from "@/lib/whatsapp";
 
 const contentByLocale = { en: contentEn, ar: contentAr };
 
@@ -14,8 +14,7 @@ type Props = { locale: Locale };
 
 export function ContactSection({ locale }: Props) {
   const content = contentByLocale[locale];
-  const waMsg = locale === "ar" ? whatsappMessageAr : whatsappMessage;
-  const waUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(waMsg)}`;
+  const waUrl = getWhatsAppUrl(locale);
 
   return (
     <Section id="contact" alt>

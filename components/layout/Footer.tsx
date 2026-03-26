@@ -3,10 +3,9 @@ import type { Locale } from "@/lib/i18n";
 import { localePath } from "@/lib/i18n";
 import { navLinks } from "@/content/en/navigation";
 import { navLinks as navLinksAr } from "@/content/ar/navigation";
-import { whatsappNumber, whatsappMessage } from "@/content/en/navigation";
-import { whatsappMessage as whatsappMessageAr } from "@/content/ar/navigation";
 import { footer as footerEn } from "@/content/en/footer";
 import { footer as footerAr } from "@/content/ar/footer";
+import { getWhatsAppUrl } from "@/lib/whatsapp";
 
 const currentYear = new Date().getFullYear();
 const navByLocale = { en: navLinks, ar: navLinksAr };
@@ -17,8 +16,7 @@ type Props = { locale: Locale };
 export function Footer({ locale }: Props) {
   const links = navByLocale[locale];
   const footer = footerByLocale[locale];
-  const waMsg = locale === "ar" ? whatsappMessageAr : whatsappMessage;
-  const waUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(waMsg)}`;
+  const waUrl = getWhatsAppUrl(locale);
 
   return (
     <footer className="border-t border-[var(--card-border)] bg-[var(--section-alt)]">

@@ -1,0 +1,1688 @@
+{
+  "common": {
+    "cta": {
+      "contentar": {
+        "requestService": "طلب خدمة",
+        "bookSiteVisit": "حجز زيارة موقع",
+        "requestConsultation": "طلب استشارة مجانية",
+        "contactWhatsApp": "تواصل عبر واتساب",
+        "requestSiteVisit": "طلب زيارة موقع",
+        "learnMore": "اعرف المزيد",
+        "viewAll": "عرض الكل",
+        "submitRequest": "إرسال الطلب",
+        "sending": "جاري الإرسال…"
+      },
+      "contenten": {
+        "requestService": "Request Service",
+        "bookSiteVisit": "Book Site Visit",
+        "requestConsultation": "Request a Free Consultation",
+        "contactWhatsApp": "Contact on WhatsApp",
+        "requestSiteVisit": "Request Site Visit",
+        "learnMore": "Learn More",
+        "viewAll": "View all",
+        "submitRequest": "Submit Request",
+        "sending": "Sending…"
+      }
+    },
+    "form": {
+      "contentar": {
+        "name": "الاسم",
+        "company": "الشركة",
+        "phone": "رقم الهاتف",
+        "serviceType": "نوع الخدمة",
+        "message": "الرسالة",
+        "businessName": "اسم الشركة",
+        "location": "الموقع",
+        "requirementDetails": "تفاصيل المتطلبات",
+        "selectService": "اختر الخدمة",
+        "placeholderName": "اسمك",
+        "placeholderCompany": "اسم شركتك",
+        "placeholderPhone": "مثال: 01234567890",
+        "placeholderMessage": "أخبرنا عن احتياجاتك…",
+        "placeholderBusiness": "اسم شركتك",
+        "placeholderLocation": "المدينة، المنطقة، أو العنوان الكامل",
+        "placeholderRequirements": "صف احتياجاتك: مساحة المبنى، عدد الكاميرات أو الأجهزة، الجدول الزمني، إلخ.",
+        "required": "*",
+        "submitRequest": "إرسال الطلب",
+        "sending": "جاري الإرسال…",
+        "successMessage": "شكراً لك. سنتواصل معك قريباً.",
+        "errorMessage": "حدث خطأ. يرجى المحاولة مرة أخرى أو التواصل معنا عبر واتساب.",
+        "errors": {
+          "name": "يرجى إدخال اسمك (حرفين على الأقل).",
+          "company": "يرجى إدخال اسم شركتك (حرفين على الأقل).",
+          "phone": "يرجى إدخال رقم هاتف صحيح.",
+          "serviceType": "يرجى اختيار الخدمة.",
+          "message": "يرجى إدخال رسالتك (10 أحرف على الأقل).",
+          "businessName": "يرجى إدخال اسم شركتك (حرفين على الأقل).",
+          "location": "يرجى إدخال موقعك (3 أحرف على الأقل).",
+          "requirementDetails": "يرجى وصف متطلباتك (10 أحرف على الأقل)."
+        }
+      },
+      "contenten": {
+        "name": "Name",
+        "company": "Company",
+        "phone": "Phone Number",
+        "serviceType": "Service Type",
+        "message": "Message",
+        "businessName": "Business Name",
+        "location": "Location",
+        "requirementDetails": "Requirement Details",
+        "selectService": "Select a service",
+        "placeholderName": "Your name",
+        "placeholderCompany": "Your company name",
+        "placeholderPhone": "e.g. 01234567890",
+        "placeholderMessage": "Tell us about your needs…",
+        "placeholderBusiness": "Your company name",
+        "placeholderLocation": "City, area, or full address",
+        "placeholderRequirements": "Describe your needs: size of premises, number of cameras or devices, timeline, etc.",
+        "required": "*",
+        "submitRequest": "Submit Request",
+        "sending": "Sending…",
+        "successMessage": "Thank you. We will contact you shortly.",
+        "errorMessage": "Something went wrong. Please try again or contact us on WhatsApp.",
+        "errors": {
+          "name": "Please enter your name (at least 2 characters).",
+          "company": "Please enter your company name (at least 2 characters).",
+          "phone": "Please enter a valid phone number.",
+          "serviceType": "Please select a service.",
+          "message": "Please enter your message (at least 10 characters).",
+          "businessName": "Please enter your business name (at least 2 characters).",
+          "location": "Please enter your location (at least 3 characters).",
+          "requirementDetails": "Please describe your requirements (at least 10 characters)."
+        }
+      }
+    }
+  },
+  "faq": {
+    "homeFaq": {
+      "contentar": [
+        {
+          "id": "1",
+          "question": "هل تعملون مع الشركات فقط؟",
+          "answer": "نعم. تيك روم مزود للشركات (B2B). نخدم العيادات والمكاتب والمستودعات والمطاعم والتجزئة وشركات اللوجستيات—وليس الأفراد."
+        },
+        {
+          "id": "2",
+          "question": "ما المناطق التي تغطونها؟",
+          "answer": "مقرنا الإسكندرية، مصر، ونخدم الشركات في الإسكندرية والمنطقة المحيطة. يمكننا مناقشة التغطية لمناطق أخرى عند الطلب."
+        },
+        {
+          "id": "3",
+          "question": "كيف أحصل على عرض سعر؟",
+          "answer": "اطلب استشارة مجانية أو زيارة موقع عبر نموذج الاتصال أو واتساب. سنناقش احتياجاتك ونقدم عرضاً واضحاً بعد تقييم موقعك ومتطلباتك."
+        },
+        {
+          "id": "4",
+          "question": "هل تقدمون الصيانة والدعم بعد التركيب؟",
+          "answer": "نعم. نقدم صيانة ودعماً للكاميرات والشبكات، وخطط دعم فني مخصصة. سنوضح الخيارات عند تقديم عرض مشروعك."
+        },
+        {
+          "id": "5",
+          "question": "هل يمكنكم التعامل مع فروع أو مواقع متعددة؟",
+          "answer": "نعم. نصمم وننفذ حلولاً للمواقع المفردة والشركات متعددة الفروع، بمعايير متسقة ونقطة اتصال واحدة."
+        }
+      ],
+      "contenten": [
+        {
+          "id": "1",
+          "question": "Do you work with businesses only?",
+          "answer": "Yes. TechRoom is a B2B provider. We serve clinics, offices, warehouses, restaurants, retail, and logistics companies—not individual homeowners."
+        },
+        {
+          "id": "2",
+          "question": "What areas do you cover?",
+          "answer": "We are based in Alexandria, Egypt, and serve businesses in Alexandria and the surrounding region. We can discuss coverage for other areas on request."
+        },
+        {
+          "id": "3",
+          "question": "How do I get a quote?",
+          "answer": "Request a free consultation or site visit via our contact form or WhatsApp. We'll discuss your needs and provide a clear quote after assessing your location and requirements."
+        },
+        {
+          "id": "4",
+          "question": "Do you offer maintenance and support after installation?",
+          "answer": "Yes. We offer maintenance and support for CCTV and networks, and dedicated IT support plans. We'll outline options when we quote your project."
+        },
+        {
+          "id": "5",
+          "question": "Can you handle multiple branches or sites?",
+          "answer": "Yes. We design and implement solutions for single sites and multi-branch businesses, with consistent standards and one point of contact."
+        }
+      ]
+    }
+  },
+  "footer": {
+    "footer": {
+      "contentar": {
+        "tagline": "بنية تحتية تقنية وحلول أمنية للشركات في الإسكندرية، مصر.",
+        "quickLinks": "روابط سريعة",
+        "contact": "Contact",
+        "whatsAppRequest": "طلب استشارة",
+        "requestSiteVisit": "طلب زيارة موقع",
+        "blog": "المدونة",
+        "copyright": "جميع الحقوق محفوظة. الإسكندرية، مصر."
+      },
+      "contenten": {
+        "tagline": "IT Infrastructure & Security Solutions for businesses in Alexandria, Egypt.",
+        "quickLinks": "Quick links",
+        "contact": "Contact",
+        "whatsAppRequest": "Request consultation",
+        "requestSiteVisit": "Request Site Visit",
+        "blog": "Blog",
+        "copyright": "All rights reserved. Alexandria, Egypt."
+      }
+    }
+  },
+  "home": {
+    "hero": {
+      "contentar": {
+        "title": "بنية تحتية تقنية، أمن كاميرات مراقبة، وحلول مراقبة ذكية للشركات",
+        "subtitle": "نساعد الشركات على تأمين منشآتها، استقرار شبكاتها، ومراقبة عملياتها عبر بنية تحتية حديثة وأدوات مراقبة ذكية."
+      },
+      "contenten": {
+        "title": "IT Infrastructure, CCTV Security, and Smart Monitoring Solutions for Businesses",
+        "subtitle": "We help companies secure their facilities, stabilize their networks, and monitor their operations through modern infrastructure and smart monitoring tools."
+      }
+    },
+    "heroSlides": {
+      "contentar": [
+        {
+          "id": "network-setup",
+          "slug": "network-setup",
+          "image": "/images/hero-infrastructure.png",
+          "title": "البنية التحتية للشبكات",
+          "subtitle": "اتصال مستقر وآمن لعملك—كابلات، مبدلات، واي فاي، واستكشاف أعطال احترافي."
+        },
+        {
+          "id": "cctv-installation",
+          "slug": "cctv-installation",
+          "image": "/images/hero-cctv.png",
+          "title": "كاميرات المراقبة والأمن",
+          "subtitle": "أمّن منشآتك بكاميرات احترافية وتسجيل ووصول عن بُعد يمكنك الاعتماد عليه."
+        },
+        {
+          "id": "it-support",
+          "slug": "it-support",
+          "image": "/images/hero-it-support.png",
+          "title": "الدعم الفني",
+          "subtitle": "دعم فني سريع الاستجابة ليبقى فريقك وأنظمتك تعمل دون انقطاع."
+        }
+      ],
+      "contenten": [
+        {
+          "id": "network-setup",
+          "slug": "network-setup",
+          "image": "/images/hero-infrastructure.png",
+          "title": "Network Infrastructure",
+          "subtitle": "Stable, secure connectivity for your business—cabling, switches, Wi‑Fi, and expert troubleshooting."
+        },
+        {
+          "id": "cctv-installation",
+          "slug": "cctv-installation",
+          "image": "/images/hero-cctv.png",
+          "title": "CCTV & Surveillance",
+          "subtitle": "Protect your premises with professional cameras, recording, and remote access you can trust."
+        },
+        {
+          "id": "it-support",
+          "slug": "it-support",
+          "image": "/images/hero-it-support.png",
+          "title": "IT Support",
+          "subtitle": "Responsive technical support so your team and systems keep running without interruption."
+        }
+      ]
+    },
+    "trustStrip": {
+      "contentar": {
+        "items": [
+          "للشركات فقط — نخدم المؤسسات، وليس الأفراد",
+          "مقرنا الإسكندرية، مصر",
+          "شبكات · كاميرات مراقبة · دعم فني · مراقبة",
+          "طلب خدمة · حجز زيارة موقع"
+        ]
+      },
+      "contenten": {
+        "items": [
+          "B2B only — We serve businesses, not individuals",
+          "Based in Alexandria, Egypt",
+          "Network · CCTV · IT Support · Monitoring",
+          "Request Service · Book Site Visit"
+        ]
+      }
+    },
+    "servicesOverview": {
+      "contentar": {
+        "title": "خدماتنا",
+        "subtitle": "حلول واضحة وموثوقة لبنية شركتك وأمنها. تصفح ما نقدمه أدناه.",
+        "viewAllServices": "عرض جميع الخدمات"
+      },
+      "contenten": {
+        "title": "Our Services",
+        "subtitle": "Clear, reliable solutions for your business infrastructure and security. Scan what we offer below.",
+        "viewAllServices": "View all services"
+      }
+    },
+    "networkInfrastructure": {
+      "contentar": {
+        "title": "البنية التحتية للشبكات",
+        "subtitle": "خبرة تقنية في شبكات الأعمال.",
+        "items": [
+          "شبكات المكاتب",
+          "إعداد الموجهات والمبدلات",
+          "تحسين تغطية الواي فاي",
+          "استكشاف أعطال الشبكة",
+          "إعداد اتصال الأعمال"
+        ]
+      },
+      "contenten": {
+        "title": "Network Infrastructure",
+        "subtitle": "Technical expertise in business networking.",
+        "items": [
+          "Office networking",
+          "Router and switch configuration",
+          "WiFi coverage optimization",
+          "Network troubleshooting",
+          "Business connectivity setup"
+        ]
+      }
+    },
+    "cctvSection": {
+      "contentar": {
+        "title": "حلول كاميرات المراقبة والمراقبة الأمنية",
+        "subtitle": "أمن ورؤية لمنشآتك.",
+        "items": [
+          "تركيب الكاميرات",
+          "المراقبة الأمنية",
+          "الوصول للكاميرات عبر الجوال",
+          "أنظمة التسجيل",
+          "مراقبة المستودعات والمكاتب"
+        ]
+      },
+      "contenten": {
+        "title": "CCTV & Surveillance Solutions",
+        "subtitle": "Security and visibility for your premises.",
+        "items": [
+          "Camera installation",
+          "Security monitoring",
+          "Mobile camera access",
+          "Recording systems",
+          "Warehouse and office surveillance"
+        ]
+      }
+    },
+    "businessMonitoringSection": {
+      "contentar": {
+        "title": "أنظمة الأعمال وأدوات المراقبة",
+        "subtitle": "نطور لوحات مراقبة وأدوات داخلية تساعد الشركات على تتبع حالة الشبكة وأنظمة الكاميرات والتنبيهات التشغيلية."
+      },
+      "contenten": {
+        "title": "Business Systems & Monitoring Tools",
+        "subtitle": "We develop monitoring dashboards and internal tools that help companies track network status, camera systems, and operational alerts."
+      }
+    },
+    "smartMonitoringDashboard": {
+      "contentar": {
+        "title": "لوحة المراقبة الذكية",
+        "subtitle": "نظام مراقبة مركزي يدمج مراقبة الشبكة، مراقبة الكاميرات، تتبع حالة الأجهزة، والتنبيهات والإشعارات.",
+        "comingSoon": "لوحة المراقبة لدينا قيد التطوير حالياً وستتيح قريباً للعملاء مراقبة بنيتهم التحتية وأنظمتهم الأمنية من واجهة مركزية."
+      },
+      "contenten": {
+        "title": "Smart Monitoring Dashboard",
+        "subtitle": "A centralized monitoring system that integrates network monitoring, CCTV monitoring, device status tracking, and alerts and notifications.",
+        "comingSoon": "Our monitoring dashboard is currently under development and will soon allow clients to monitor their infrastructure and security systems from a centralized interface."
+      }
+    },
+    "dashboardFeatures": {
+      "contentar": {
+        "title": "إمكانات اللوحة",
+        "subtitle": "ميزات محتملة لنظام المراقبة القادم.",
+        "features": [
+          {
+            "title": "مراقبة الأجهزة متصلة / غير متصلة",
+            "icon": "device"
+          },
+          {
+            "title": "الوصول للكاميرات",
+            "icon": "camera"
+          },
+          {
+            "title": "التنبيهات والإشعارات",
+            "icon": "alert"
+          },
+          {
+            "title": "نظرة عامة على حالة الشبكة",
+            "icon": "network"
+          },
+          {
+            "title": "مراقبة صحة الأجهزة",
+            "icon": "health"
+          }
+        ]
+      },
+      "contenten": {
+        "title": "Dashboard Capabilities",
+        "subtitle": "Potential features of the upcoming monitoring system.",
+        "features": [
+          {
+            "title": "Online / Offline Device Monitoring",
+            "icon": "device"
+          },
+          {
+            "title": "Camera Access",
+            "icon": "camera"
+          },
+          {
+            "title": "Alerts & Notifications",
+            "icon": "alert"
+          },
+          {
+            "title": "Network Status Overview",
+            "icon": "network"
+          },
+          {
+            "title": "Device Health Monitoring",
+            "icon": "health"
+          }
+        ]
+      }
+    },
+    "technologyPartners": {
+      "contentar": {
+        "title": "الشركاء التقنيون",
+        "subtitle": "نعمل مع علامات موثوقة في البنية التحتية والأمن.",
+        "partners": [
+          "Hikvision",
+          "Cisco",
+          "MikroTik",
+          "TP-Link",
+          "D-Link"
+        ]
+      },
+      "contenten": {
+        "title": "Technology Partners",
+        "subtitle": "We work with trusted brands for infrastructure and security.",
+        "partners": [
+          "Hikvision",
+          "Cisco",
+          "MikroTik",
+          "TP-Link",
+          "D-Link"
+        ]
+      }
+    },
+    "howItWorks": {
+      "contentar": {
+        "title": "كيف نعمل",
+        "subtitle": "خطوات بسيطة من الطلب حتى الدعم.",
+        "steps": [
+          {
+            "number": 1,
+            "title": "طلب الخدمة",
+            "description": "تواصل عبر النموذج أو واتساب أو الهاتف."
+          },
+          {
+            "number": 2,
+            "title": "زيارة الموقع",
+            "description": "نزور موقعك للتقييم والتخطيط."
+          },
+          {
+            "number": 3,
+            "title": "التركيب",
+            "description": "نركب ونضبط الحل."
+          },
+          {
+            "number": 4,
+            "title": "إعداد المراقبة / الدعم",
+            "description": "دعم ومراقبة مستمرة حسب الحاجة."
+          }
+        ]
+      },
+      "contenten": {
+        "title": "How It Works",
+        "subtitle": "Simple steps from request to support.",
+        "steps": [
+          {
+            "number": 1,
+            "title": "Request Service",
+            "description": "Get in touch via form, WhatsApp, or phone."
+          },
+          {
+            "number": 2,
+            "title": "Site Visit",
+            "description": "We visit your location to assess and plan."
+          },
+          {
+            "number": 3,
+            "title": "Installation",
+            "description": "We install and configure your solution."
+          },
+          {
+            "number": 4,
+            "title": "Monitoring Setup / Support",
+            "description": "Ongoing support and monitoring as needed."
+          }
+        ]
+      }
+    },
+    "industriesServed": {
+      "contentar": {
+        "title": "القطاعات التي نخدمها",
+        "subtitle": "نعمل مع شركات في قطاعات متعددة—من العيادات والمكاتب إلى المستودعات والتجزئة.",
+        "seeHowWeHelp": "اعرف كيف نساعد",
+        "viewAllIndustries": "عرض جميع القطاعات"
+      },
+      "contenten": {
+        "title": "Industries we serve",
+        "subtitle": "We work with businesses across sectors—from clinics and offices to warehouses and retail.",
+        "seeHowWeHelp": "See how we help",
+        "viewAllIndustries": "View all industries"
+      }
+    },
+    "whyChooseUs": {
+      "contentar": {
+        "title": "لماذا تيك روم",
+        "subtitle": "نجمع الخبرة التقنية مع نهج عملي يركز على احتياجات الأعمال.",
+        "points": [
+          {
+            "title": "مركزون على الشركات",
+            "description": "نعمل مع الشركات فقط. حلولنا مصممة للعيادات والمكاتب والمستودعات والتجزئة واللوجستيات—وليس للاستخدام المنزلي."
+          },
+          {
+            "title": "دعم موثوق",
+            "description": "أوقات استجابة واضحة ونقطة اتصال واحدة. عند حدوث عطل، تعرف من تتصل."
+          },
+          {
+            "title": "عملية شفافة",
+            "description": "من التقييم إلى العرض إلى التركيب—بدون تكاليف مخفية. نوضح ما نفعله ولماذا."
+          },
+          {
+            "title": "وجود محلي",
+            "description": "مقرنا الإسكندرية، نزور موقعك، نفهم بيئة عملك، ونقدم الدعم المستمر عند الحاجة."
+          }
+        ]
+      },
+      "contenten": {
+        "title": "Why choose TechRoom",
+        "subtitle": "We combine technical expertise with a practical, business-first approach.",
+        "points": [
+          {
+            "title": "Business-focused",
+            "description": "We work only with businesses. Our solutions are designed for clinics, offices, warehouses, retail, and logistics—not home use."
+          },
+          {
+            "title": "Reliable support",
+            "description": "Clear response times and a single point of contact. When something breaks, you know who to call."
+          },
+          {
+            "title": "Transparent process",
+            "description": "From assessment to quote to installation—no hidden costs. We explain what we're doing and why."
+          },
+          {
+            "title": "Local presence",
+            "description": "Based in Alexandria, we can visit your site, understand your environment, and provide ongoing support when you need it."
+          }
+        ]
+      }
+    },
+    "projectsPreview": {
+      "contentar": {
+        "title": "مشاريع حديثة",
+        "subtitle": "شاهد كيف ساعدنا شركات مثل شركتك بأنظمة المراقبة والشبكات والدعم الفني.",
+        "viewAllProjects": "عرض جميع المشاريع"
+      },
+      "contenten": {
+        "title": "Recent projects",
+        "subtitle": "See how we've helped businesses like yours with CCTV, networks, and IT support.",
+        "viewAllProjects": "View all projects"
+      }
+    },
+    "processSection": {
+      "contentar": {
+        "title": "كيف نعمل",
+        "subtitle": "عملية بسيطة وشفافة من أول اتصال حتى التسليم.",
+        "steps": [
+          {
+            "number": "1",
+            "title": "التقييم",
+            "description": "نناقش احتياجاتك ونزور موقعك لفهم بيئتك ومتطلباتك."
+          },
+          {
+            "number": "2",
+            "title": "العرض",
+            "description": "تستلم عرضاً واضحاً يشمل النطاق والمعدات والأسعار—بدون مفاجآت."
+          },
+          {
+            "number": "3",
+            "title": "التنفيذ",
+            "description": "نركب ونضبط ونسلم الحل مع التوثيق والدعم."
+          }
+        ]
+      },
+      "contenten": {
+        "title": "How we work",
+        "subtitle": "A simple, transparent process from first contact to handover.",
+        "steps": [
+          {
+            "number": "1",
+            "title": "Assess",
+            "description": "We discuss your needs and visit your site to understand your environment and requirements."
+          },
+          {
+            "number": "2",
+            "title": "Quote",
+            "description": "You receive a clear proposal with scope, equipment (where relevant), and pricing—no surprises."
+          },
+          {
+            "number": "3",
+            "title": "Execute",
+            "description": "We install, configure, and hand over your solution with documentation and support."
+          }
+        ]
+      }
+    },
+    "faqSection": {
+      "contentar": {
+        "title": "الأسئلة الشائعة",
+        "subtitle": "إجابات سريعة عن خدماتنا وكيف نعمل."
+      },
+      "contenten": {
+        "title": "Frequently asked questions",
+        "subtitle": "Quick answers about our services and how we work."
+      }
+    },
+    "contactSection": {
+      "contentar": {
+        "title": "طلب استشارة مجانية",
+        "subtitle": "تواصل عبر واتساب أو البريد أو الهاتف—أو احجز زيارة موقع. سنرد عليك سريعاً.",
+        "formTitle": "أرسل بياناتك",
+        "formSubtitle": "سنستخدمها لإعداد عرض مخصص والتواصل معك.",
+        "contactMethods": "طرق التواصل",
+        "whatsApp": "واتساب",
+        "email": "البريد الإلكتروني",
+        "phone": "الهاتف",
+        "bookSiteVisit": "حجز زيارة موقع"
+      },
+      "contenten": {
+        "title": "Request a Free Consultation",
+        "subtitle": "Reach us by WhatsApp, email, or phone—or book a site visit. We'll get back to you quickly.",
+        "formTitle": "Send us your details",
+        "formSubtitle": "We'll use this to prepare a tailored proposal and contact you.",
+        "contactMethods": "Contact methods",
+        "whatsApp": "WhatsApp",
+        "email": "Email",
+        "phone": "Phone",
+        "bookSiteVisit": "Book Site Visit"
+      }
+    },
+    "ctaAfterServices": {
+      "contentar": {
+        "title": "مستعد للبدء؟",
+        "subtitle": "اطلب خدمة أو احجز زيارة موقع. سنرد بسرعة."
+      },
+      "contenten": {
+        "title": "Ready to get started?",
+        "subtitle": "Request a service or book a site visit. We'll respond quickly."
+      }
+    }
+  },
+  "industries": {
+    "industries": {
+      "contentar": [
+        {
+          "id": "clinics",
+          "slug": "clinics",
+          "title": "العيادات والمراكز الطبية",
+          "shortDescription": "حلول تقنية وأمنية تدعم رعاية المرضى والخصوصية وسلاسة العمليات اليومية.",
+          "description": "العيادات والمراكز الطبية تحتاج بنية تقنية موثوقة وشبكات آمنة ومراقبة تدعم السلامة والامتثال. تيك روم تقدم حلولاً مصممة لبيئات الرعاية الصحية.",
+          "painPoints": [
+            "الحاجة لحماية بيانات المرضى وضمان أمان الشبكة",
+            "الحاجة لمراقبة 24/7 في مناطق الانتظار والمداخل والمناطق الحرجة",
+            "التوقف يؤثر على المواعيد والسجلات والفوترة",
+            "متطلبات الامتثال والأدلة للحوادث",
+            "أجهزة وأنظمة متعددة يجب أن تعمل معاً بموثوقية"
+          ],
+          "solutions": [
+            "تصميم شبكة آمنة وضبط الوصول للمناطق السريرية والإدارية",
+            "تغطية كاميرات للمداخل ومناطق الانتظار والممرات",
+            "دعم فني بأوقات استجابة واضحة لتقليل التعطل",
+            "كابلات منظمة وواي فاي للعيادات والمستشفيات الصغيرة"
+          ],
+          "highlight": "نفهم حساسية بيئات الرعاية الصحية ونصمم أنظمة تدعم الأمان والعمليات اليومية معاً."
+        },
+        {
+          "id": "offices",
+          "slug": "offices",
+          "title": "المكاتب",
+          "shortDescription": "شبكات ودعم يبقيان فريقك متصلاً ومنتجاً.",
+          "description": "المكاتب تعتمد على إنترنت وواي فاي ودعم فني مستقر. تيك روم تقدم إعداد الشبكات والمراقبة والدعم المستمر ليعمل فريقك دون انقطاعات تقنية.",
+          "painPoints": [
+            "واي فاي أو كابلات غير موثوقة تبطئ العمل",
+            "عدم وجود دعم فني واضح عند حدوث عطل",
+            "مخاوف أمنية عند المداخل أو غرف الخوادم أو بعد الدوام",
+            "فريق متنامٍ أو مساحة جديدة بدون خطة شبكة مناسبة",
+            "عدم الفصل بين شبكة الزوار والموظفين"
+          ],
+          "solutions": [
+            "تصميم شبكة كامل: كابلات، مبدلات، واي فاي، وأمان أساسي",
+            "كاميرات للمداخل والمناطق المشتركة والمناطق الحساسة",
+            "دعم فني مخصص بأوقات استجابة محددة",
+            "التوثيق والتسليم لفريقك"
+          ],
+          "highlight": "نصمم شبكات ودعم مكاتب يتوسعان مع فريقك ونوفر لك نقطة اتصال واحدة للتقنية."
+        },
+        {
+          "id": "warehouses",
+          "slug": "warehouses",
+          "title": "المستودعات واللوجستيات",
+          "shortDescription": "مراقبة وشبكات تحمي الأصول وتدعم العمليات.",
+          "description": "مواقع المستودعات واللوجستيات تحتاج تغطية واسعة وشبكات موثوقة للمخزون والعمليات ودعم فني. تيك روم تقدم كاميرات وإعداد شبكات ودعماً مناسباً للمساحات الكبيرة.",
+          "painPoints": [
+            "سرقة أو تلف أو نزاعات بدون دليل واضح",
+            "مناطق كبيرة بتغطية كاميرات ضعيفة أو معدومة",
+            "واي فاي ضعيف أو عدم وجود شبكة في أجزاء المنشأة",
+            "الحاجة لمراقبة أرصفة التحميل والبوابات ومناطق التخزين",
+            "فريق تقني محدود لصيانة الأنظمة"
+          ],
+          "solutions": [
+            "أنظمة كاميرات مصممة للمساحات الكبيرة، بما فيها الخارجية ومنخفضة الإضاءة",
+            "شبكة وواي فاي للمكاتب وأرضية المستودع",
+            "دعم فني لأجهزة الكمبيوتر والماسحات والبنية الأساسية",
+            "عرض وتسجيل عن بُعد للإدارة والأمن"
+          ],
+          "highlight": "نتخصص في التغطية والاعتمادية للمساحات الكبيرة، لتحمي أصولك وتستمر عملياتك."
+        },
+        {
+          "id": "restaurants",
+          "slug": "restaurants",
+          "title": "المطاعم",
+          "shortDescription": "أمن وتقنية يدعمان عمليات الصالة والمطبخ.",
+          "description": "المطاعم تحتاج مراقبة في مناطق الطعام والمطبخ واتصال مستقر لأنظمة البيع والعمليات ودعم فني سريع. تيك روم تقدم حلولاً مخصصة لقطاع الضيافة.",
+          "painPoints": [
+            "حوادث أو نزاعات بدون تسجيلات للمراجعة",
+            "توقف أنظمة البيع أو المطبخ أثناء الخدمة",
+            "واي فاي ضعيف أو غير موثوق للزوار والموظفين",
+            "الحاجة لمراقبة التعامل النقدي والتخزين والمداخل",
+            "عدم وجود دعم فني مخصص عند حدوث عطل"
+          ],
+          "solutions": [
+            "كاميرات لمناطق الطعام والمطبخ والمداخل والتخزين",
+            "إعداد شبكة لأنظمة البيع والمكتب الخلفي وواي فاي الزوار",
+            "دعم فني باستجابة سريعة لتقليل تعطل الخدمة",
+            "كابلات ومعدات واضحة لتحديثات مستقبلية سهلة"
+          ],
+          "highlight": "نساعد المطاعم على العمل بسلاسة بأنظمة ودعم موثوقين يفهمان أوقات الذروة واحتياجات التشغيل."
+        },
+        {
+          "id": "retail",
+          "slug": "retail",
+          "title": "التجزئة والفروع",
+          "shortDescription": "مراقبة وتقنية للمتاجر المفردة ومتاجر التجزئة متعددة الفروع.",
+          "description": "مواقع التجزئة تحتاج أماناً واضحاً وشبكات مستقرة لأنظمة البيع والمخزون ودعماً عبر الفروع. تيك روم تقدم حلول كاميرات وتقنية تتوسع من فرع واحد إلى عدة فروع.",
+          "painPoints": [
+            "نقص أو سرقة أو حوادث موظفين بدون دليل موثوق",
+            "فشل أنظمة البيع أو المخزون عبر الفروع",
+            "شبكات غير متسقة أو ضعيفة في بعض المواقع",
+            "عدم وجود مزود واحد للأمن والتقنية عبر الفروع",
+            "متطلبات الامتثال أو التقارير للمكتب الرئيسي"
+          ],
+          "solutions": [
+            "كاميرات مخصصة للتجزئة: المداخل، نقاط الدفع، مناطق المخزون، والمحيط",
+            "شبكة وواي فاي لكل فرع بمعايير متسقة",
+            "دعم فني يخدم فروعاً متعددة عن بُعد وميدانياً",
+            "وصول عن بُعد للإدارة لعرض التسجيلات ومتابعة الأنظمة"
+          ],
+          "highlight": "ندعم الفروع المفردة والتجزئة متعددة المواقع بحلول متسقة واحترافية ونقطة اتصال واحدة."
+        },
+        {
+          "id": "logistics",
+          "slug": "logistics",
+          "title": "شركات اللوجستيات",
+          "shortDescription": "أمن واتصال للساحات والمكاتب وعمليات الأسطول.",
+          "description": "شركات اللوجستيات تحتاج مراقبة في الساحات والمستودعات وشبكات موثوقة للمناوبات والتتبع ودعم فني. تيك روم تقدم حلولاً متكاملة لقطاع اللوجستيات.",
+          "painPoints": [
+            "سرقة أو تلف في الساحات أو البوابات أو أرصفة التحميل",
+            "مشاكل شبكة أو برمجيات تؤثر على المناوبات والتتبع",
+            "مواقع متعددة بدون نهج موحد للأمن والتقنية",
+            "الحاجة لأدلة وتقارير للتأمين أو العملاء",
+            "فريق تقني محدود لصيانة الأنظمة"
+          ],
+          "solutions": [
+            "كاميرات للساحات والبوابات وأرصفة التحميل والمكاتب",
+            "إعداد شبكة وواي فاي للمكاتب ومناطق التشغيل",
+            "دعم فني للمناوبات والتتبع وأنظمة المكاتب",
+            "مراقبة عن بُعد وأدلة موثقة للحوادث"
+          ],
+          "highlight": "نساعد شركات اللوجستيات على تأمين مواقعها والحفاظ على عمل الأنظمة لاستمرار العمليات والتوصيل."
+        }
+      ],
+      "contenten": [
+        {
+          "id": "clinics",
+          "slug": "clinics",
+          "title": "Clinics & Medical Centers",
+          "shortDescription": "IT and security solutions that support patient care, privacy, and smooth daily operations.",
+          "description": "Clinics and medical centers need reliable IT infrastructure, secure networks, and surveillance that supports safety and compliance. TechRoom delivers solutions tailored to healthcare environments.",
+          "painPoints": [
+            "Need to protect patient data and ensure network security",
+            "Require 24/7 surveillance in waiting areas, entrances, and critical zones",
+            "Downtime affects appointments, records, and billing",
+            "Compliance and evidence requirements for incidents",
+            "Multiple devices and systems that must work together reliably"
+          ],
+          "solutions": [
+            "Secure network design and access control for clinical and admin areas",
+            "CCTV coverage for entrances, waiting areas, and corridors",
+            "IT support with clear response times to minimize disruption",
+            "Structured cabling and Wi‑Fi for clinics and small hospitals"
+          ],
+          "highlight": "We understand the sensitivity of healthcare environments and design systems that support both security and daily operations."
+        },
+        {
+          "id": "offices",
+          "slug": "offices",
+          "title": "Offices",
+          "shortDescription": "Networks and support that keep your team connected and productive.",
+          "description": "Offices depend on stable internet, Wi‑Fi, and IT support. TechRoom provides network setup, surveillance, and ongoing support so your team can work without technical interruptions.",
+          "painPoints": [
+            "Unreliable Wi‑Fi or cabling slowing down work",
+            "No clear IT support when something breaks",
+            "Security concerns at entrances, server rooms, or after hours",
+            "Growing team or new space without a proper network plan",
+            "Guest and staff networks not properly separated"
+          ],
+          "solutions": [
+            "Full network design: cabling, switches, Wi‑Fi, and basic security",
+            "CCTV for entrances, common areas, and sensitive zones",
+            "Dedicated IT support with defined response times",
+            "Documentation and handover for your team"
+          ],
+          "highlight": "We design office networks and support plans that scale with your team and give you one clear point of contact for IT."
+        },
+        {
+          "id": "warehouses",
+          "slug": "warehouses",
+          "title": "Warehouses & Logistics",
+          "shortDescription": "Surveillance and networks that protect assets and support operations.",
+          "description": "Warehouses and logistics sites need wide-area coverage, reliable networks for inventory and operations, and IT support. TechRoom delivers CCTV, network setup, and support suited to large spaces.",
+          "painPoints": [
+            "Theft, damage, or disputes with no clear evidence",
+            "Large areas with poor or no camera coverage",
+            "Weak Wi‑Fi or no network in parts of the facility",
+            "Need to monitor loading bays, gates, and storage zones",
+            "Limited in-house IT to maintain systems"
+          ],
+          "solutions": [
+            "CCTV systems designed for large spaces, including outdoor and low-light areas",
+            "Network and Wi‑Fi for offices and warehouse floor",
+            "IT support for PCs, scanners, and basic infrastructure",
+            "Remote viewing and recording for management and security"
+          ],
+          "highlight": "We specialize in coverage and reliability for large spaces, so you can protect assets and keep operations running."
+        },
+        {
+          "id": "restaurants",
+          "slug": "restaurants",
+          "title": "Restaurants",
+          "shortDescription": "Security and IT that support both front-of-house and back-of-house operations.",
+          "description": "Restaurants need surveillance in dining and kitchen areas, stable connectivity for POS and operations, and quick IT support. TechRoom provides tailored solutions for the hospitality sector.",
+          "painPoints": [
+            "Incidents or disputes with no footage to review",
+            "POS or kitchen systems going down during service",
+            "Weak or unreliable Wi‑Fi for guests and staff",
+            "Need to monitor cash handling, storage, and entrances",
+            "No dedicated IT when something fails"
+          ],
+          "solutions": [
+            "CCTV for dining areas, kitchen, entrances, and storage",
+            "Network setup for POS, back office, and guest Wi‑Fi",
+            "IT support with fast response to minimize service disruption",
+            "Clear cabling and equipment for easy future updates"
+          ],
+          "highlight": "We help restaurants run smoothly with reliable systems and support that understand peak hours and operational needs."
+        },
+        {
+          "id": "retail",
+          "slug": "retail",
+          "title": "Retail & Branches",
+          "shortDescription": "Surveillance and IT for single stores and multi-branch retail.",
+          "description": "Retail locations need visible security, stable networks for POS and inventory, and support across branches. TechRoom delivers CCTV and IT solutions that scale from one branch to many.",
+          "painPoints": [
+            "Shrinkage, theft, or staff incidents with no reliable evidence",
+            "POS or inventory systems failing across branches",
+            "Inconsistent or weak networks in some locations",
+            "No single provider for security and IT across branches",
+            "Compliance or head office reporting requirements"
+          ],
+          "solutions": [
+            "CCTV tailored to retail: entrances, till points, stock areas, and perimeter",
+            "Network and Wi‑Fi for each branch with consistent standards",
+            "IT support that can serve multiple branches remotely and on-site",
+            "Remote access for management to view footage and check systems"
+          ],
+          "highlight": "We support single branches and multi-site retail with consistent, professional solutions and one point of contact."
+        },
+        {
+          "id": "logistics",
+          "slug": "logistics",
+          "title": "Logistics Companies",
+          "shortDescription": "Security and connectivity for yards, offices, and fleet operations.",
+          "description": "Logistics companies need surveillance at yards and warehouses, reliable networks for dispatch and tracking, and IT support. TechRoom provides integrated solutions for the logistics sector.",
+          "painPoints": [
+            "Theft or damage at yards, gates, or loading areas",
+            "Network or software issues affecting dispatch and tracking",
+            "Multiple sites with no unified approach to security and IT",
+            "Need for evidence and reporting for insurance or clients",
+            "Limited technical staff to maintain systems"
+          ],
+          "solutions": [
+            "CCTV for yards, gates, loading bays, and offices",
+            "Network setup and Wi‑Fi for offices and operational areas",
+            "IT support for dispatch, tracking, and office systems",
+            "Remote monitoring and documented evidence for incidents"
+          ],
+          "highlight": "We help logistics companies secure their sites and keep systems running so operations and delivery stay on track."
+        }
+      ]
+    }
+  },
+  "navigation": {
+    "navLinks": {
+      "contentar": [
+        {
+          "href": "/",
+          "label": "الرئيسية"
+        },
+        {
+          "href": "/services",
+          "label": "الخدمات"
+        },
+        {
+          "href": "/projects",
+          "label": "المشاريع"
+        },
+        {
+          "href": "/partners",
+          "label": "الشركاء"
+        },
+        {
+          "href": "/contact",
+          "label": "اتصل بنا"
+        }
+      ],
+      "contenten": [
+        {
+          "href": "/",
+          "label": "Home"
+        },
+        {
+          "href": "/services",
+          "label": "Services"
+        },
+        {
+          "href": "/projects",
+          "label": "Projects"
+        },
+        {
+          "href": "/partners",
+          "label": "Partners"
+        },
+        {
+          "href": "/contact",
+          "label": "Contact"
+        }
+      ]
+    },
+    "whatsappNumber": {
+      "contentar": "201234567890",
+      "contenten": "201234567890"
+    },
+    "whatsappMessage": {
+      "contentar": "مرحباً، أود طلب خدمة أو حجز زيارة موقع لشركتي.",
+      "contenten": "Hello, I would like to request a service or book a site visit for my business."
+    },
+    "contactEmail": {
+      "contentar": "info@techroom-eg.com",
+      "contenten": "info@techroom-eg.com"
+    },
+    "contactPhone": {
+      "contentar": "+20 123 456 7890",
+      "contenten": "+20 123 456 7890"
+    }
+  },
+  "pages": {
+    "servicesPage": {
+      "contentar": {
+        "title": "خدماتنا",
+        "subtitle": "نساعد الشركات على العمل بأمان وكفاءة أكبر من خلال مراقبة موثوقة وشبكات مستقرة ودعم فني سريع الاستجابة.",
+        "notSure": "لست متأكداً من الخدمة التي تحتاجها؟",
+        "notSureSubtitle": "أخبرنا عن شركتك وسنوصي بالحل المناسب."
+      },
+      "contenten": {
+        "title": "Our services",
+        "subtitle": "We help businesses operate more securely and efficiently through reliable surveillance, stable networks, and responsive technical support.",
+        "notSure": "Not sure which service you need?",
+        "notSureSubtitle": "Tell us about your business and we'll recommend the right solution."
+      }
+    },
+    "industriesPage": {
+      "contentar": {
+        "title": "القطاعات التي نخدمها",
+        "subtitle": "نعمل مع شركات في قطاعات متعددة. كل قطاع له احتياجات مختلفة—نخصص كاميراتنا وشبكاتنا ودعمنا الفني ليناسب.",
+        "seeHowWeHelp": "اعرف كيف نساعد",
+        "viewAllIndustries": "عرض جميع القطاعات",
+        "notListed": "قطاعك غير مذكور؟",
+        "notListedSubtitle": "نعمل مع أنواع كثيرة من الشركات. تواصل معنا وسنناقش احتياجاتك."
+      },
+      "contenten": {
+        "title": "Industries we serve",
+        "subtitle": "We work with businesses across sectors. Each industry has different needs—we tailor our CCTV, network, and IT support to fit.",
+        "seeHowWeHelp": "See how we help",
+        "viewAllIndustries": "View all industries",
+        "notListed": "Your industry not listed?",
+        "notListedSubtitle": "We work with many types of businesses. Get in touch and we'll discuss your needs."
+      }
+    },
+    "projectsPage": {
+      "contentar": {
+        "title": "مشاريعنا",
+        "subtitle": "شاهد كيف ساعدنا شركات مثل شركتك بالمراقبة والشبكات والدعم الفني. تحديات حقيقية وحلول عملية.",
+        "challenge": "التحدي",
+        "solution": "الحل",
+        "outcome": "النتيجة",
+        "similarChallenge": "لديك تحدٍ مشابه؟",
+        "similarChallengeSubtitle": "أخبرنا عن شركتك وسنقترح حلاً مخصصاً لك."
+      },
+      "contenten": {
+        "title": "Our projects",
+        "subtitle": "See how we've helped businesses like yours with surveillance, networks, and IT support. Real challenges, practical solutions.",
+        "challenge": "Challenge",
+        "solution": "Solution",
+        "outcome": "Outcome",
+        "similarChallenge": "Have a similar challenge?",
+        "similarChallengeSubtitle": "Tell us about your business and we'll propose a solution tailored to you."
+      }
+    },
+    "aboutPage": {
+      "contentar": {
+        "title": "من نحن - تيك روم",
+        "intro1": "تيك روم شركة حلول بنية تحتية تقنية وأمنية مقرها الإسكندرية، مصر. نعمل حصرياً مع الشركات—العيادات والمكاتب والمستودعات والمطاعم والتجزئة واللوجستيات—لمساعدتها على العمل بأمان وكفاءة أكبر.",
+        "intro2": "نقدم أنظمة كاميرات مراقبة موثوقة وإعداد شبكات واتصال مستقر ودعم فني سريع الاستجابة. هدفنا أن نكون شريكك الموثوق لتركيزك على إدارة عملك بينما نهتم بالأساس التقني.",
+        "intro3": "نؤمن بالتواصل الواضح والأسعار الشفافة والحلول التي تناسب حجمك وقطاعك. سواء احتجت تأمين موقع واحد أو ربط ودعم فروع متعددة، نصمم وننفذ باحترافية ومتابعة.",
+        "valuesTitle": "ما نؤمن به",
+        "valuesSubtitle": "قيم توجه طريقة عملنا مع عملائنا.",
+        "reliability": "الاعتمادية",
+        "reliabilityDesc": "نبني وندعم أنظمة يمكن لشركتك الاعتماد عليها—مراقبة تسجل، شبكات تبقى عاملة، ودعم يستجيب عند الحاجة.",
+        "clarity": "الوضوح",
+        "clarityDesc": "بدون تعقيدات. نوضح ما نفعله ولماذا وكم يكلف—لتتخذ قرارات مستنيرة بدون تخمين.",
+        "partnership": "الشراكة",
+        "partnershipDesc": "لسنا مجرد موردين. نهدف لأن نكون شريكاً طويل الأمد تتصل به عند حدوث عطل أو عند استعدادك للنمو.",
+        "letsTalk": "لنتحدث",
+        "letsTalkSubtitle": "أخبرنا عن شركتك واحتياجاتك. سنستجيب بسرعة ونعمل معك لإيجاد الحل المناسب."
+      },
+      "contenten": {
+        "title": "About TechRoom",
+        "intro1": "TechRoom is an IT Infrastructure & Security Solutions company based in Alexandria, Egypt. We work exclusively with businesses—clinics, offices, warehouses, restaurants, retail, and logistics—to help them operate more securely and efficiently.",
+        "intro2": "We provide reliable CCTV and surveillance systems, stable network setup and connectivity, and responsive IT support. Our goal is to be your trusted partner so you can focus on running your business while we take care of the technical foundation.",
+        "intro3": "We believe in clear communication, transparent pricing, and solutions that fit your size and industry. Whether you need a single site secured or multiple branches connected and supported, we design and deliver with professionalism and follow-through.",
+        "valuesTitle": "What we stand for",
+        "valuesSubtitle": "Values that guide how we work with our clients.",
+        "reliability": "Reliability",
+        "reliabilityDesc": "We build and support systems that your business can depend on—surveillance that records, networks that stay up, and support that responds when you need it.",
+        "clarity": "Clarity",
+        "clarityDesc": "No jargon overload. We explain what we're doing, why, and what it costs—so you can make informed decisions without guesswork.",
+        "partnership": "Partnership",
+        "partnershipDesc": "We're not just vendors. We aim to be a long-term partner you can call when something breaks or when you're ready to grow.",
+        "letsTalk": "Let's talk",
+        "letsTalkSubtitle": "Tell us about your business and what you need. We'll respond quickly and work with you to find the right solution."
+      }
+    },
+    "contactPage": {
+      "contentar": {
+        "title": "طلب استشارة مجانية",
+        "subtitle": "أخبرنا عن شركتك واحتياجاتك. سنتواصل معك سريعاً لمناقشة مشروعك وترتيب زيارة موقع إن لزم.",
+        "alsoReach": "يمكنك أيضاً التواصل معنا مباشرة عبر واتساب لاستجابة سريعة. نخدم الشركات في الإسكندرية والمنطقة المحيطة.",
+        "formTitle": "أرسل بياناتك",
+        "formSubtitle": "سنستخدمها لإعداد عرض مخصص والتواصل معك. يمكنك طلب زيارة موقع مجانية في النموذج أو عبر واتساب."
+      },
+      "contenten": {
+        "title": "Request a free consultation",
+        "subtitle": "Tell us about your business and what you need. We'll get back to you quickly to discuss your project and arrange a site visit if helpful.",
+        "alsoReach": "You can also reach us directly on WhatsApp for a quick response. We serve businesses in Alexandria and the surrounding region.",
+        "formTitle": "Send us your details",
+        "formSubtitle": "We'll use this to prepare a tailored proposal and contact you. You can request a free site visit in the form or via WhatsApp."
+      }
+    },
+    "blogPage": {
+      "contentar": {
+        "title": "المدونة",
+        "subtitle": "نصائح وتحديثات ورؤى حول البنية التقنية والأمن للشركات. المنشورات الجديدة ستظهر هنا.",
+        "comingSoon": "نعد محتوى مفيداً لأصحاب الأعمال والمدراء. تفضل بالعودة قريباً لمقالات عن الأمن والشبكات وأفضل ممارسات التقنية."
+      },
+      "contenten": {
+        "title": "Blog",
+        "subtitle": "Tips, updates, and insights on IT infrastructure and security for businesses. New posts will appear here.",
+        "comingSoon": "We're preparing useful content for business owners and managers. Check back soon for articles on security, networks, and IT best practices."
+      }
+    }
+  },
+  "projects": {
+    "projects": {
+      "contentar": [
+        {
+          "id": "1",
+          "title": "مركز طبي متعدد الفروع – كاميرات وشبكة",
+          "businessType": "العيادات والمراكز الطبية",
+          "challenge": "مركز طبي بثلاثة فروع احتاج مراقبة متسقة وشبكة مستقرة في جميع المواقع. لم يكن لديهم وصول عن بُعد للتسجيلات ومشاكل واي فاي متكررة في مناطق الانتظار.",
+          "solution": "صممنا خطة كاميرات وشبكة موحدة لجميع الفروع الثلاثة. ركبنا كاميرات IP ومسجلات NVR مع وصول عن بُعد، ونشرنا كابلات منظمة ونقاط وصول واي فاي ليتوفر اتصال موثوق للموظفين والمرضى. تم توثيق كل فرع وتسليمه مع تدريب أساسي.",
+          "outcome": "العميل يمكنه عرض جميع المواقع من لوحة تحكم واحدة، وانخفضت مشاكل الاتصال في مناطق الانتظار بشكل كبير. يستخدمون النظام أيضاً للامتثال وتقارير الحوادث."
+        },
+        {
+          "id": "2",
+          "title": "مبنى مكتبي – إعادة هيكلة الشبكة بالكامل",
+          "businessType": "المكاتب",
+          "challenge": "مكتب بأكثر من 40 موظفاً كان لديه كابلات قديمة ومناطق واي فاي ميتة وعدم وجود دعم فني واضح. التوقف يؤثر على الإنتاجية والموظفون الجدد يعانون من الاتصال.",
+          "solution": "أجرينا تقييماً كاملاً للشبكة وتركيب كابلات Cat6 جديدة ومبدلات محدثة ونشر واي فاي منظم مع SSIDs منفصلة للموظفين والزوار. أنشأنا أيضاً عقد دعم فني مستمر بأوقات استجابة محددة.",
+          "outcome": "تغطية الواي فاي الآن متسقة في المبنى، والعميل لديه نقطة اتصال واحدة للمشاكل التقنية. توسعوا وأضافوا محطات عمل جديدة بدون مشاكل شبكة."
+        },
+        {
+          "id": "3",
+          "title": "مستودع ومركز لوجستي – مراقبة واتصال",
+          "businessType": "المستودعات واللوجستيات",
+          "challenge": "شركة لوجستيات احتاجت تأمين مستودع وساحة كبيرين ومراقبة أرصفة التحميل والبوابات وتوفير وصول شبكة موثوق للمكتب وأنظمة إدارة المستودع.",
+          "solution": "ركبنا مزيجاً من كاميرات داخلية وخارجية بقدرة ليلية تغطي الساحة والبوابات وأرصفة التحميل ومناطق المستودع الرئيسية. نشرنا أيضاً شبكة وواي فاي مخصصين للمكتب ومناطق التشغيل مع تقسيم صحيح.",
+          "outcome": "العميل لديه الآن رؤية كاملة للموقع، واستخدم التسجيلات لتقارير الحوادث والتأمين، ولديه اتصال مستقر لأنظمة المناوبات والمخزون."
+        },
+        {
+          "id": "4",
+          "title": "سلسلة مطاعم – كاميرات ودعم فني",
+          "businessType": "المطاعم",
+          "challenge": "سلسلة مطاعم صغيرة لم يكن لديها مراقبة في فرعين واعتمدت على فنيين عشوائيين عند فشل أنظمة البيع، مما أدى لتأخيرات أثناء الخدمة.",
+          "solution": "ركبنا كاميرات في الفرعين (الصالة، المطبخ، المداخل، المكتب الخلفي) مع وصول عن بُعد للإدارة. أنشأنا أيضاً خطة دعم فني بنظام اشتراك مع استجابة ذات أولوية لمشاكل البيع والاتصال.",
+          "outcome": "الإدارة يمكنها مراقبة الفرعين عن بُعد، والمشاكل التقنية تُحل بسرعة مع تأثير ضئيل على الخدمة. أضاف العميل فرعاً ثالثاً بنفس الإعداد."
+        },
+        {
+          "id": "5",
+          "title": "معرض تجزئة – أمن وشبكة",
+          "businessType": "التجزئة",
+          "challenge": "معرض احتاج تقليل النقص والنزاعات عند نقطة الدفع وتحسين الواي فاي للعملاء والموظفين ووجود شخص للاتصال عند توقف الأنظمة.",
+          "solution": "ركبنا كاميرات تغطي المدخل ومنطقة الدفع وأرضية المعرض مع تغطية واضحة لمناطق البيع. رفعنا أيضاً مستوى الشبكة والواي فاي وقدمنا دعم فني مستمر لأنظمة البيع ومعدات المكتب.",
+          "outcome": "العميل استخدم التسجيلات لحل النزاعات وتحسين إجراءات الدفع. الاتصال مستقر ولديهم أوقات استجابة ثابتة للمشاكل التقنية."
+        }
+      ],
+      "contenten": [
+        {
+          "id": "1",
+          "title": "Multi-Branch Medical Center – CCTV & Network",
+          "businessType": "Clinics & Medical",
+          "challenge": "A medical center with three branches needed consistent surveillance and a stable network across all locations. They had no remote access to footage and frequent Wi‑Fi issues in waiting areas.",
+          "solution": "We designed a unified CCTV and network plan for all three branches. We installed IP cameras and NVRs with remote access, and deployed structured cabling and Wi‑Fi access points so staff and patients had reliable connectivity. Each branch was documented and handed over with basic training.",
+          "outcome": "The client can view all sites from one dashboard, and connectivity issues in waiting areas dropped significantly. They also use the system for compliance and incident reporting."
+        },
+        {
+          "id": "2",
+          "title": "Office Building – Full Network Overhaul",
+          "businessType": "Offices",
+          "challenge": "An office of 40+ employees had outdated cabling, dead Wi‑Fi zones, and no clear IT support. Downtime was affecting productivity and new hires were struggling with connectivity.",
+          "solution": "We carried out a full network assessment and installed new Cat6 cabling, updated switches, and a structured Wi‑Fi deployment with separate SSIDs for staff and guests. We also set up an ongoing IT support contract with defined response times.",
+          "outcome": "Wi‑Fi coverage is now consistent across the building, and the client has a single point of contact for IT issues. They have since expanded and added more workstations without network problems."
+        },
+        {
+          "id": "3",
+          "title": "Warehouse & Logistics Hub – Surveillance & Connectivity",
+          "businessType": "Warehouses & Logistics",
+          "challenge": "A logistics company needed to secure a large warehouse and yard, monitor loading bays and gates, and provide reliable network access for the office and warehouse management systems.",
+          "solution": "We installed a mix of indoor and outdoor cameras with night capability, covering the yard, gates, loading bays, and main warehouse areas. We also deployed a dedicated network and Wi‑Fi for the office and operational zones, with proper segmentation.",
+          "outcome": "The client now has full visibility of the site, has used footage for incident and insurance reporting, and has stable connectivity for dispatch and inventory systems."
+        },
+        {
+          "id": "4",
+          "title": "Restaurant Chain – CCTV & IT Support",
+          "businessType": "Restaurants",
+          "challenge": "A small restaurant chain had no surveillance in two branches and relied on ad-hoc technicians when POS or systems failed, leading to delays during service.",
+          "solution": "We installed CCTV in both branches (dining, kitchen, entrances, and back office) with remote access for management. We also set up a retainer-based IT support plan with priority response for POS and connectivity issues.",
+          "outcome": "Management can monitor both branches remotely, and technical issues are resolved quickly with minimal impact on service. The client has added a third branch with the same setup."
+        },
+        {
+          "id": "5",
+          "title": "Retail Showroom – Security & Network",
+          "businessType": "Retail",
+          "challenge": "A showroom needed to reduce shrinkage and disputes at the till, improve Wi‑Fi for customers and staff, and have someone to call when systems went down.",
+          "solution": "We installed cameras covering the entrance, till area, and showroom floor, with clear coverage of point-of-sale zones. We also upgraded the network and Wi‑Fi and provided ongoing IT support for POS and office equipment.",
+          "outcome": "The client has used footage to resolve disputes and improve till procedures. Connectivity is stable, and they have fixed response times for IT issues."
+        }
+      ]
+    }
+  },
+  "services": {
+    "services": {
+      "contentar": [
+        {
+          "id": "cctv-installation",
+          "slug": "cctv-installation",
+          "title": "كاميرات المراقبة والأنظمة الأمنية",
+          "shortDescription": "أنظمة مراقبة احترافية تحمي منشآتك على مدار الساعة وتوفر لك راحة البال.",
+          "description": "نصمم ونركب أنظمة كاميرات مراقبة موثوقة للشركات. من الكاميرات إلى التسجيل والمراقبة عن بُعد، نقدم حلولاً تحافظ على أمان منشآتك وتوافقها مع المتطلبات.",
+          "overview": "تيك روم تقدم حلول كاميرات مراقبة متكاملة للشركات. نقيّم موقعك، نوصي بالكاميرات ومعدات التسجيل المناسبة، نتعامل مع الكابلات والتركيب، ونتأكد من إمكانية مراقبة منشآتك عن بُعد. أنظمتنا مصممة للاعتمادية وسهولة الاستخدام.",
+          "problemsSolved": [
+            "سرقة أو تخريب أو دخول غير مصرح به بدون دليل",
+            "نقاط عمى وتغطية ضعيفة في مناطق حرجة",
+            "كاميرات أو مسجلات قديمة أو غير موثوقة",
+            "عدم إمكانية الوصول عن بُعد للبث المباشر أو المسجل",
+            "متطلبات الامتثال أو التأمين للأدلة المسجلة"
+          ],
+          "whatsIncluded": [
+            "مسح شامل للموقع وتخطيط التغطية",
+            "اختيار الكاميرات (داخلية، خارجية، قبة، رصاصية، PTZ)",
+            "إعداد NVR/DVR والتخزين",
+            "الكابلات ومصدر الطاقة",
+            "الإعداد والوصول عن بُعد",
+            "تدريب أساسي لفريقك",
+            "الضمان والدعم"
+          ],
+          "suitableFor": [
+            "العيادات والمراكز الطبية",
+            "المكاتب ومساحات العمل المشترك",
+            "المستودعات واللوجستيات",
+            "المطاعم والمطابخ",
+            "التجزئة والمعارض",
+            "المواقف والمداخل"
+          ],
+          "process": [
+            {
+              "step": 1,
+              "title": "تقييم الموقع",
+              "description": "نزور موقعك، نحدد المناطق الحرجة، ونخطط لمواقع الكاميرات والمعدات."
+            },
+            {
+              "step": 2,
+              "title": "العرض والتصميم",
+              "description": "تستلم عرضاً واضحاً مع قائمة المعدات وخطة التغطية."
+            },
+            {
+              "step": 3,
+              "title": "التركيب",
+              "description": "فريقنا يركب الكاميرات والمسجلات والكابلات بأقل قدر من الإزعاج."
+            },
+            {
+              "step": 4,
+              "title": "التسليم والدعم",
+              "description": "نضبط الوصول، ندرب موظفيك، ونقدم الدعم المستمر."
+            }
+          ],
+          "faq": [
+            {
+              "q": "كم من الوقت يستغرق تركيب كاميرات المراقبة عادة؟",
+              "a": "التركيبات الصغيرة (4–8 كاميرات) غالباً تستغرق 1–2 يوم. المواقع الأكبر قد تحتاج 3–5 أيام. نعطيك جدولاً زمنياً بعد زيارة الموقع."
+            },
+            {
+              "q": "هل يمكننا رؤية التسجيلات عن بُعد؟",
+              "a": "نعم. نضبط وصولاً آمناً عن بُعد عبر التطبيق أو المتصفح لرؤية البث المباشر والتسجيلات من أي مكان."
+            },
+            {
+              "q": "هل تقدمون الصيانة؟",
+              "a": "نعم. نقدم خطط صيانة ودعم للاحتفاظ بنظامك يعمل ومحدّثاً."
+            }
+          ]
+        },
+        {
+          "id": "network-setup",
+          "slug": "network-setup",
+          "title": "البنية التحتية للشبكات",
+          "shortDescription": "بنية شبكية مستقرة وقابلة للتوسع لتشغيل عملك بدون مشاكل اتصال.",
+          "description": "نصمم وننفذ شبكات سلكية ولاسلكية للمكاتب والمستودعات والمواقع المتعددة. من الكابلات والمبدلات إلى الواي فاي والأمان، نبني شبكات تدعم عملياتك.",
+          "overview": "تيك روم تصمم وتنشر شبكات أعمال مستقرة وآمنة وجاهزة للنمو. نتعامل مع الكابلات المنظمة والمبدلات والموجهات ونقاط الوصول اللاسلكية وأمان الشبكة الأساسي ليبقى فريقك وأنظمتك متصلين.",
+          "problemsSolved": [
+            "إنترنت أو واي فاي بطيء أو غير موثوق يؤثر على الإنتاجية",
+            "مناطق ميتة أو تغطية ضعيفة في أجزاء المبنى",
+            "فوضى في الكابلات أو تخطيط غير واضح أو عدم وجود مساحة للتوسع",
+            "عدم الفصل بين شبكة الزوار والشركة",
+            "عدم الوضوح عن المعدات اللازمة لحجمك واستخدامك"
+          ],
+          "whatsIncluded": [
+            "تقييم وتصميم الشبكة",
+            "كابلات منظمة (Cat6/Cat6a حيث يناسب)",
+            "مبدلات وموجهات ونقاط وصول",
+            "تغطية واي فاي وإعداد SSID",
+            "إعداد VLAN وأمان أساسي",
+            "التوثيق والتسليم",
+            "الدعم واستكشاف الأخطاء"
+          ],
+          "suitableFor": [
+            "المكاتب ومساحات العمل المشترك",
+            "العيادات والمراكز الطبية",
+            "المستودعات واللوجستيات",
+            "المطاعم والتجزئة",
+            "المدارس ومراكز التدريب",
+            "الشركات متعددة الفروع"
+          ],
+          "process": [
+            {
+              "step": 1,
+              "title": "التقييم",
+              "description": "نراجع تخطيطك وأجهزتك ومتطلباتك لتصميم الشبكة المناسبة."
+            },
+            {
+              "step": 2,
+              "title": "التصميم والعرض",
+              "description": "تحصل على تصميم واضح وقائمة معدات وتكلفة ثابتة أو تقديرية."
+            },
+            {
+              "step": 3,
+              "title": "التنفيذ",
+              "description": "نركب الكابلات والمعدات والواي فاي بأقل قدر من الإزعاج."
+            },
+            {
+              "step": 4,
+              "title": "الاختبار والتسليم",
+              "description": "نختبر الاتصال، نوثق الإعداد، وندرب فريقك."
+            }
+          ],
+          "faq": [
+            {
+              "q": "هل تقدمون واي فاي فقط أم كابلات كاملة؟",
+              "a": "نقدم الاثنين. يمكننا إضافة أو تحسين الواي فاي فقط، أو إعداد كامل سلكي ولاسلكي حسب احتياجاتك."
+            },
+            {
+              "q": "كيف تتعاملون مع الكابلات الموجودة؟",
+              "a": "نقيّم ما لديك. نعيد استخدام الجيد ونوصي بالترقية فقط حيث يلزم."
+            },
+            {
+              "q": "هل يمكنكم دعم فروع متعددة؟",
+              "a": "نعم. نصمم وننفذ شبكات للمواقع المفردة والشركات متعددة الفروع."
+            }
+          ]
+        },
+        {
+          "id": "it-support",
+          "slug": "it-support",
+          "title": "الدعم الفني",
+          "shortDescription": "دعم فني سريع الاستجابة ليعمل فريقك وأنظمتك دون انقطاع.",
+          "description": "تيك روم تقدم دعم فني للشركات التي تحتاج مساعدة موثوقة في أجهزة الكمبيوتر والخوادم والبرامج والمشاكل اليومية. نستجيب بسرعة ونحافظ على استمرار عملياتك.",
+          "overview": "خدمة الدعم الفني لدينا توفر لك نقطة اتصال مخصصة للمشاكل التقنية. نتعامل مع مشاكل الأجهزة والبرامج ودعم المستخدمين وفحص الخوادم والنسخ الاحتياطي الأساسي والتنسيق مع أنظمتك الحالية لتركيزك على عملك.",
+          "problemsSolved": [
+            "توقف عن العمل واستجابة بطيئة من الدعم الفني الحالي",
+            "عدم وجود شخص واضح للاتصال عند حدوث عطل",
+            "مشاكل متكررة في أجهزة الكمبيوتر أو الطابعات أو البرامج",
+            "عدم وضوح حول النسخ الاحتياطي والأمان الأساسي",
+            "إنفاق عشوائي على الإصلاحات بدون خطة مستمرة"
+          ],
+          "whatsIncluded": [
+            "دعم مكتب مساعدة ونظام تذاكر",
+            "دعم ميداني وعن بُعد (حسب الخطة)",
+            "استكشاف أخطاء أجهزة الكمبيوتر والطابعات",
+            "تثبيت وتحديث البرامج",
+            "مراقبة أساسية للخوادم والنسخ الاحتياطي",
+            "دعم حسابات المستخدمين والوصول",
+            "أوقات استجابة واضحة وتصعيد"
+          ],
+          "suitableFor": [
+            "المكاتب الصغيرة والمتوسطة",
+            "العيادات والمراكز الطبية",
+            "التجزئة والمطاعم",
+            "المستودعات واللوجستيات",
+            "مؤسسات الخدمات المهنية",
+            "أي شركة تعتمد على أجهزة الكمبيوتر والتقنية الأساسية"
+          ],
+          "process": [
+            {
+              "step": 1,
+              "title": "الاكتشاف",
+              "description": "نفهم أنظمتك ومستخدميك وأولوياتك لتخصيص الدعم."
+            },
+            {
+              "step": 2,
+              "title": "الخطة والاتفاق",
+              "description": "نقترح خطة دعم (ساعات، أوقات استجابة، ميداني/عن بُعد) وأسعاراً."
+            },
+            {
+              "step": 3,
+              "title": "الاندماج",
+              "description": "نضبط قنوات الاتصال والوصول والتوثيق."
+            },
+            {
+              "step": 4,
+              "title": "الدعم المستمر",
+              "description": "تحصل على دعم وتقارير وتوصيات للتحسينات."
+            }
+          ],
+          "faq": [
+            {
+              "q": "ما وقت الاستجابة الذي تقدمونه؟",
+              "a": "نقدم مستويات مختلفة. الخيارات المتاحة تشمل الاستجابة في نفس اليوم أو اليوم التالي؛ للمشاكل الحرجة يمكن إعطاؤها أولوية."
+            },
+            {
+              "q": "هل تدعمون البرامج الموجودة (مثل الطبية أو المحاسبية)؟",
+              "a": "ندعم بيئات Windows/المكتب القياسية وبرامج الأعمال الشائعة. للبرامج المتخصصة ننسق مع مزودك أو ندرب على الأساسيات."
+            },
+            {
+              "q": "هل الدعم عن بُعد فقط أم ميداني أيضاً؟",
+              "a": "نقدم الاثنين. كثير من المشاكل تُحل عن بُعد؛ يمكننا تضمين زيارات ميدانية مجدولة أو عند الحاجة في خطتك."
+            }
+          ]
+        },
+        {
+          "id": "business-monitoring",
+          "slug": "business-monitoring",
+          "title": "أنظمة الأعمال وأدوات المراقبة",
+          "shortDescription": "لوحات مراقبة وأدوات داخلية لتتبع حالة الشبكة وأنظمة الكاميرات والتنبيهات التشغيلية.",
+          "description": "نطور لوحات مراقبة وأدوات داخلية تساعد الشركات على تتبع حالة الشبكة وأنظمة الكاميرات والتنبيهات التشغيلية من مكان واحد.",
+          "overview": "تيك روم تبني لوحات مراقبة وأدوات داخلية للشركات. تساعدك على تتبع حالة الشبكة وأنظمة الكاميرات والتنبيهات التشغيلية لرؤية ما يهم بدون التبديل بين أنظمة متعددة.",
+          "problemsSolved": [
+            "عدم وجود رؤية موحدة للشبكة والكاميرات وحالة الأجهزة",
+            "فحوص يدوية وعدم وجود تنبيهات مركزية",
+            "صعوبة تتبع ما هو متصل أو غير متصل",
+            "أدوات متفرقة لأنظمة مختلفة"
+          ],
+          "whatsIncluded": [
+            "لوحات مخصصة لبنيتك التحتية",
+            "نظرة عامة على حالة الشبكة",
+            "تتبع حالة الكاميرات والأجهزة",
+            "التنبيهات والإشعارات",
+            "التكامل مع أنظمتك الموجودة حيثما أمكن"
+          ],
+          "suitableFor": [
+            "المكاتب ومراكز العمليات",
+            "الشركات متعددة المواقع",
+            "الشركات ذات بنية كاميرات وشبكات موجودة"
+          ],
+          "process": [
+            {
+              "step": 1,
+              "title": "الاكتشاف",
+              "description": "نفهم أنظمتك وما تريد مراقبته."
+            },
+            {
+              "step": 2,
+              "title": "التصميم",
+              "description": "نقترح تخطيط لوحة أو أداة والميزات."
+            },
+            {
+              "step": 3,
+              "title": "البناء والتكامل",
+              "description": "نبني ونربط ببنيتك التحتية."
+            },
+            {
+              "step": 4,
+              "title": "التسليم",
+              "description": "ندرب فريقك ونقدم الدعم."
+            }
+          ],
+          "faq": [
+            {
+              "q": "هل هذا نفس لوحة المراقبة الذكية؟",
+              "a": "لوحة المراقبة الذكية هي منتجنا المركزي القادم. يمكننا أيضاً بناء أدوات مراقبة مخصصة لشركتك اليوم."
+            },
+            {
+              "q": "هل يعمل مع كاميراتنا وشبكتنا الموجودة؟",
+              "a": "نعم. ندمج مع أنظمة شائعة ويمكننا التكيف مع إعدادك."
+            }
+          ]
+        }
+      ],
+      "contenten": [
+        {
+          "id": "cctv-installation",
+          "slug": "cctv-installation",
+          "title": "CCTV / Surveillance Systems",
+          "shortDescription": "Professional surveillance systems that protect your premises 24/7 and give you peace of mind.",
+          "description": "We design and install reliable CCTV and surveillance systems for businesses. From cameras to recording and remote monitoring, we deliver solutions that keep your premises secure and compliant.",
+          "overview": "TechRoom delivers end-to-end CCTV and surveillance solutions for businesses. We assess your site, recommend the right cameras and recording equipment, handle cabling and installation, and ensure you can monitor your premises remotely. Our systems are built for reliability and ease of use.",
+          "problemsSolved": [
+            "Theft, vandalism, or unauthorized access with no evidence",
+            "Blind spots and poor coverage in critical areas",
+            "Outdated or unreliable cameras and recorders",
+            "No remote access to live or recorded footage",
+            "Compliance or insurance requirements for recorded evidence"
+          ],
+          "whatsIncluded": [
+            "Site survey and coverage planning",
+            "Camera selection (indoor, outdoor, dome, bullet, PTZ)",
+            "NVR/DVR and storage setup",
+            "Cabling and power supply",
+            "Configuration and remote access setup",
+            "Basic training for your team",
+            "Warranty and support"
+          ],
+          "suitableFor": [
+            "Clinics and medical centers",
+            "Offices and coworking spaces",
+            "Warehouses and logistics",
+            "Restaurants and kitchens",
+            "Retail and showrooms",
+            "Parking and entrances"
+          ],
+          "process": [
+            {
+              "step": 1,
+              "title": "Site assessment",
+              "description": "We visit your location, identify critical areas, and plan camera positions and equipment."
+            },
+            {
+              "step": 2,
+              "title": "Quote and design",
+              "description": "You receive a clear quote with equipment list and coverage plan."
+            },
+            {
+              "step": 3,
+              "title": "Installation",
+              "description": "Our team installs cameras, recorders, and cabling with minimal disruption."
+            },
+            {
+              "step": 4,
+              "title": "Handover and support",
+              "description": "We configure access, train your staff, and provide ongoing support."
+            }
+          ],
+          "faq": [
+            {
+              "q": "How long does a typical CCTV installation take?",
+              "a": "Small setups (4–8 cameras) often take 1–2 days. Larger sites may need 3–5 days. We give you a timeline after the site visit."
+            },
+            {
+              "q": "Can we view footage remotely?",
+              "a": "Yes. We set up secure remote access via app or browser so you can view live and recorded footage from anywhere."
+            },
+            {
+              "q": "Do you offer maintenance?",
+              "a": "Yes. We offer maintenance and support plans to keep your system running and up to date."
+            }
+          ]
+        },
+        {
+          "id": "network-setup",
+          "slug": "network-setup",
+          "title": "Network Infrastructure",
+          "shortDescription": "Stable, scalable network infrastructure so your business runs without connectivity issues.",
+          "description": "We design and implement wired and wireless networks for offices, warehouses, and multi-site locations. From cabling and switches to Wi‑Fi and security, we build networks that support your operations.",
+          "overview": "TechRoom designs and deploys business networks that are stable, secure, and ready to grow. We handle structured cabling, switches, routers, Wi‑Fi access points, and basic network security so your team and systems stay connected.",
+          "problemsSolved": [
+            "Slow or unreliable internet and Wi‑Fi affecting productivity",
+            "Dead zones or weak coverage in parts of the building",
+            "Cabling chaos, unclear layout, or no room to expand",
+            "No separation between guest and business traffic",
+            "Unclear what equipment you need for your size and usage"
+          ],
+          "whatsIncluded": [
+            "Network assessment and design",
+            "Structured cabling (Cat6/Cat6a where suitable)",
+            "Switches, routers, and access points",
+            "Wi‑Fi coverage and SSID setup",
+            "VLAN and basic security configuration",
+            "Documentation and handover",
+            "Support and troubleshooting"
+          ],
+          "suitableFor": [
+            "Offices and coworking spaces",
+            "Clinics and medical centers",
+            "Warehouses and logistics",
+            "Restaurants and retail",
+            "Schools and training centers",
+            "Multi-branch businesses"
+          ],
+          "process": [
+            {
+              "step": 1,
+              "title": "Assessment",
+              "description": "We review your layout, devices, and requirements to design the right network."
+            },
+            {
+              "step": 2,
+              "title": "Design and quote",
+              "description": "You get a clear design, equipment list, and fixed or estimated cost."
+            },
+            {
+              "step": 3,
+              "title": "Implementation",
+              "description": "We install cabling, equipment, and Wi‑Fi with minimal disruption."
+            },
+            {
+              "step": 4,
+              "title": "Testing and handover",
+              "description": "We test connectivity, document the setup, and train your team."
+            }
+          ],
+          "faq": [
+            {
+              "q": "Do you do Wi‑Fi only or full cabling?",
+              "a": "We do both. We can add or improve Wi‑Fi only, or do a full wired and wireless setup depending on your needs."
+            },
+            {
+              "q": "How do you handle existing cabling?",
+              "a": "We assess what you have. We reuse what's good and recommend upgrades only where needed."
+            },
+            {
+              "q": "Can you support multiple branches?",
+              "a": "Yes. We design and implement networks for single sites and multi-branch businesses."
+            }
+          ]
+        },
+        {
+          "id": "it-support",
+          "slug": "it-support",
+          "title": "IT Support",
+          "shortDescription": "Responsive technical support so your systems and team can work without interruption.",
+          "description": "TechRoom provides IT support for businesses that need reliable help with computers, servers, software, and day-to-day technical issues. We respond quickly and keep your operations running.",
+          "overview": "Our IT support service gives you a dedicated point of contact for technical issues. We handle hardware and software problems, user support, basic server and backup checks, and coordination with your existing systems so you can focus on your business.",
+          "problemsSolved": [
+            "Downtime and slow response from current IT support",
+            "No clear person to call when something breaks",
+            "Recurring issues with PCs, printers, or software",
+            "Uncertainty about backups and basic security",
+            "Ad-hoc spending on fixes with no ongoing plan"
+          ],
+          "whatsIncluded": [
+            "Helpdesk and ticket-based support",
+            "On-site and remote support (as per plan)",
+            "PC, laptop, and printer troubleshooting",
+            "Software installation and updates",
+            "Basic server and backup monitoring",
+            "User account and access support",
+            "Clear response times and escalation"
+          ],
+          "suitableFor": [
+            "Small and medium offices",
+            "Clinics and medical centers",
+            "Retail and restaurants",
+            "Warehouses and logistics",
+            "Professional services firms",
+            "Any business that relies on PCs and basic IT"
+          ],
+          "process": [
+            {
+              "step": 1,
+              "title": "Discovery",
+              "description": "We understand your systems, users, and priorities to tailor support."
+            },
+            {
+              "step": 2,
+              "title": "Plan and agreement",
+              "description": "We propose a support plan (hours, response times, on-site/remote) and pricing."
+            },
+            {
+              "step": 3,
+              "title": "Onboarding",
+              "description": "We set up contact channels, access, and documentation."
+            },
+            {
+              "step": 4,
+              "title": "Ongoing support",
+              "description": "You get consistent support, reporting, and recommendations for improvements."
+            }
+          ],
+          "faq": [
+            {
+              "q": "What response time do you offer?",
+              "a": "We offer different tiers. Typical options include same-day or next-business-day response; critical issues can be prioritized."
+            },
+            {
+              "q": "Do you support existing software (e.g. medical or accounting)?",
+              "a": "We support standard Windows/office environments and common business software. For specialized apps we coordinate with your vendor or train on basics."
+            },
+            {
+              "q": "Is support remote only or on-site too?",
+              "a": "We offer both. Many issues are solved remotely; we can include scheduled or as-needed on-site visits in your plan."
+            }
+          ]
+        },
+        {
+          "id": "business-monitoring",
+          "slug": "business-monitoring",
+          "title": "Business Systems & Monitoring Tools",
+          "shortDescription": "Monitoring dashboards and internal tools to track network status, camera systems, and operational alerts.",
+          "description": "We develop monitoring dashboards and internal tools that help companies track network status, camera systems, and operational alerts from a single place.",
+          "overview": "TechRoom builds monitoring dashboards and internal tools for businesses. These help you track network status, camera systems, and operational alerts so you can see what matters without switching between systems.",
+          "problemsSolved": [
+            "No single view of network, cameras, and device status",
+            "Manual checks and no central alerts",
+            "Difficulty tracking what is online or offline",
+            "Scattered tools for different systems"
+          ],
+          "whatsIncluded": [
+            "Custom dashboards for your infrastructure",
+            "Network status overview",
+            "Camera and device status tracking",
+            "Alerts and notifications",
+            "Integration with existing systems where possible"
+          ],
+          "suitableFor": [
+            "Offices and operations centers",
+            "Multi-site businesses",
+            "Companies with existing CCTV and network infrastructure"
+          ],
+          "process": [
+            {
+              "step": 1,
+              "title": "Discovery",
+              "description": "We understand your systems and what you want to monitor."
+            },
+            {
+              "step": 2,
+              "title": "Design",
+              "description": "We propose a dashboard or tool layout and features."
+            },
+            {
+              "step": 3,
+              "title": "Build & integrate",
+              "description": "We build and connect to your infrastructure."
+            },
+            {
+              "step": 4,
+              "title": "Handover",
+              "description": "We train your team and provide support."
+            }
+          ],
+          "faq": [
+            {
+              "q": "Is this the same as the Smart Monitoring Dashboard?",
+              "a": "The Smart Monitoring Dashboard is our upcoming centralized product. We can also build custom monitoring tools for your business today."
+            },
+            {
+              "q": "Can it work with our existing cameras and network?",
+              "a": "Yes. We integrate with common systems and can adapt to your setup."
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

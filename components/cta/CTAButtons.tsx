@@ -1,17 +1,11 @@
 import { Button } from "@/components/ui/Button";
 import type { Locale } from "@/lib/i18n";
 import { localePath } from "@/lib/i18n";
-import { whatsappNumber, whatsappMessage } from "@/content/en/navigation";
-import { whatsappMessage as whatsappMessageAr } from "@/content/ar/navigation";
+import { getWhatsAppUrl } from "@/lib/whatsapp";
 import { cta as ctaEn } from "@/content/en/common";
 import { cta as ctaAr } from "@/content/ar/common";
 
 const ctaByLocale = { en: ctaEn, ar: ctaAr };
-
-const waUrl = (locale: Locale) => {
-  const msg = locale === "ar" ? whatsappMessageAr : whatsappMessage;
-  return `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(msg)}`;
-};
 
 interface CTAButtonsProps {
   locale: Locale;
@@ -50,7 +44,7 @@ export function CTAButtons({
             {cta.bookSiteVisit}
           </Button>
         </div>
-        <Button href={waUrl(locale)} external variant="outline">
+        <Button href={getWhatsAppUrl(locale)} external variant="outline">
           {cta.contactWhatsApp}
         </Button>
       </div>
@@ -65,7 +59,7 @@ export function CTAButtons({
         </Button>
       )}
       {whatsapp && (
-        <Button href={waUrl(locale)} external variant="outline">
+        <Button href={getWhatsAppUrl(locale)} external variant="outline">
           {cta.contactWhatsApp}
         </Button>
       )}

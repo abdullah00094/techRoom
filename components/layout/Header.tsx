@@ -5,28 +5,47 @@ import Image from "next/image";
 import Link from "next/link";
 import type { Locale } from "@/lib/i18n";
 import { localePath } from "@/lib/i18n";
-import { navLinks } from "@/content/en/navigation";
-import { navLinks as navLinksAr } from "@/content/ar/navigation";
 import { cta as ctaEn } from "@/content/en/common";
 import { cta as ctaAr } from "@/content/ar/common";
 import { Button } from "@/components/ui/Button";
 import { MobileNav } from "./MobileNav";
 import { LanguageSwitcher } from "@/components/ui/LanguageSwitcher";
-
-const navByLocale = { en: navLinks, ar: navLinksAr };
+import { NavLinksList } from "./NavLinksList";
 const ctaByLocale = { en: ctaEn, ar: ctaAr };
 
 type Props = { locale: Locale };
 
 export function Header({ locale }: Props) {
   const [scrolled, setScrolled] = useState(false);
-  const links = navByLocale[locale];
+  // `lg` breakpoint in Tailwind is 1024px by default.
+  const [isDesktop, setIsDesktop] = useState<boolean | null>(null);
   const cta = ctaByLocale[locale];
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 20);
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
+  useEffect(() => {
+    const mql = window.matchMedia("(min-width: 1024px)");
+
+    const update = () => setIsDesktop(mql.matches);
+    update();
+
+    // Safari fallback for older APIs.
+    if ("addEventListener" in mql) {
+      mql.addEventListener("change", update);
+      return () => mql.removeEventListener("change", update);
+    }
+
+    (mql as unknown as { addListener: (cb: () => void) => void; removeListener: (cb: () => void) => void }).addListener(
+      update
+    );
+    return () =>
+      (mql as unknown as {
+        removeListener: (cb: () => void) => void;
+      }).removeListener(update);
   }, []);
 
   return (
@@ -49,20 +68,14 @@ export function Header({ locale }: Props) {
           />
         </Link>
 
-        <nav
-          className="hidden lg:flex lg:items-center lg:gap-8"
-          aria-label="Main navigation"
-        >
-          {links.map(({ href, label }) => (
-            <Link
-              key={href}
-              href={localePath(href, locale)}
-              className="text-sm font-medium text-[var(--muted)] transition hover:text-[var(--foreground)] focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)] focus-visible:ring-offset-2 rounded px-1"
-            >
-              {label}
-            </Link>
-          ))}
-        </nav>
+        {isDesktop ? (
+          <nav className="flex items-center gap-8" aria-label="Main navigation">
+            <NavLinksList
+              locale={locale}
+              itemClassName="text-sm font-medium text-[var(--muted)] transition hover:text-[var(--foreground)] focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)] focus-visible:ring-offset-2 rounded px-1"
+            />
+          </nav>
+        ) : null}
 
         <div className="flex items-center gap-2 sm:gap-3">
           <LanguageSwitcher locale={locale} className="hidden sm:inline-flex" />
@@ -73,7 +86,7 @@ export function Header({ locale }: Props) {
           >
             {cta.requestService}
           </Button>
-          <MobileNav locale={locale} />
+          {isDesktop === false ? <MobileNav locale={locale} /> : null}
         </div>
       </div>
     </header>

@@ -5,12 +5,12 @@ import { Section, SectionHeader } from "@/components/ui/Section";
 import { ContactForm } from "@/components/forms/ContactForm";
 import type { Locale } from "@/lib/i18n";
 import { localePath } from "@/lib/i18n";
-import { whatsappNumber, whatsappMessage, contactEmail, contactPhone } from "@/content/en/navigation";
-import { whatsappMessage as whatsappMessageAr } from "@/content/ar/navigation";
+import { contactEmail, contactPhone } from "@/content/en/navigation";
 import { contactPage as contentEn } from "@/content/en/pages";
 import { contactPage as contentAr } from "@/content/ar/pages";
 import { contactSection as sectionEn } from "@/content/en/home";
 import { contactSection as sectionAr } from "@/content/ar/home";
+import { getWhatsAppUrl } from "@/lib/whatsapp";
 
 const contentByLocale = { en: contentEn, ar: contentAr };
 const sectionByLocale = { en: sectionEn, ar: sectionAr };
@@ -33,8 +33,7 @@ export default async function ContactPage({ params }: Props) {
   const l = locale as Locale;
   const content = contentByLocale[l];
   const section = sectionByLocale[l];
-  const waMsg = l === "ar" ? whatsappMessageAr : whatsappMessage;
-  const waUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(waMsg)}`;
+  const waUrl = getWhatsAppUrl(l);
 
   return (
     <Section className="pt-8 pb-16" id="contact">

@@ -1,18 +1,14 @@
 "use client";
 
 import { useState } from "react";
-import Link from "next/link";
 import type { Locale } from "@/lib/i18n";
 import { localePath } from "@/lib/i18n";
-import { navLinks } from "@/content/en/navigation";
-import { navLinks as navLinksAr } from "@/content/ar/navigation";
 import { cta as ctaEn } from "@/content/en/common";
 import { cta as ctaAr } from "@/content/ar/common";
-import { whatsappNumber, whatsappMessage } from "@/content/en/navigation";
-import { whatsappMessage as whatsappMessageAr } from "@/content/ar/navigation";
 import { Button } from "@/components/ui/Button";
+import { getWhatsAppUrl } from "@/lib/whatsapp";
+import { NavLinksList } from "./NavLinksList";
 
-const navByLocale = { en: navLinks, ar: navLinksAr };
 const ctaByLocale = { en: ctaEn, ar: ctaAr };
 
 type Props = { locale: Locale };
@@ -20,15 +16,13 @@ type Props = { locale: Locale };
 export function MobileNav({ locale }: Props) {
   const [open, setOpen] = useState(false);
   const close = () => setOpen(false);
-  const links = navByLocale[locale];
   const cta = ctaByLocale[locale];
-  const waMsg = locale === "ar" ? whatsappMessageAr : whatsappMessage;
-  const waUrl = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(waMsg)}`;
+  const waUrl = getWhatsAppUrl(locale);
 
   const closeLabel = locale === "ar" ? "إغلاق القائمة" : "Close menu";
 
   return (
-    <div className="lg:hidden">
+    <div>
       <button
         type="button"
         onClick={() => setOpen(!open)}
@@ -54,12 +48,12 @@ export function MobileNav({ locale }: Props) {
       {open && (
         <>
           <div
-            className="fixed inset-0 z-40 bg-black/70 backdrop-blur-sm lg:hidden"
+            className="fixed inset-0 z-40 bg-black/70 backdrop-blur-sm"
             aria-hidden
             onClick={close}
           />
           <nav
-            className="fixed right-0 top-0 z-50 flex h-full min-h-[100dvh] w-full max-w-sm flex-col gap-1 border-l border-white/10 bg-black p-6 pt-20 shadow-2xl lg:hidden rtl:right-auto rtl:left-0 rtl:border-l-0 rtl:border-r"
+            className="fixed right-0 top-0 z-50 flex h-full min-h-[100dvh] w-full max-w-sm flex-col gap-1 border-l border-white/10 bg-black p-6 pt-20 shadow-2xl rtl:right-auto rtl:left-0 rtl:border-l-0 rtl:border-r"
             aria-label={locale === "ar" ? "القائمة الرئيسية" : "Mobile navigation"}
           >
             <button
@@ -73,16 +67,11 @@ export function MobileNav({ locale }: Props) {
               </svg>
             </button>
 
-            {links.map(({ href, label }) => (
-              <Link
-                key={href}
-                href={localePath(href, locale)}
-                className="rounded-lg px-4 py-3 text-lg font-medium text-white hover:bg-white/10 text-start"
-                onClick={close}
-              >
-                {label}
-              </Link>
-            ))}
+            <NavLinksList
+              locale={locale}
+              onNavigate={close}
+              itemClassName="rounded-lg px-4 py-3 text-lg font-medium text-white hover:bg-white/10 text-start"
+            />
             <div className="mt-4 flex flex-col gap-2 border-t border-white/15 pt-4">
               <Button
                 href={localePath("/contact", locale)}
