@@ -536,50 +536,6 @@
         "viewAllProjects": "View all projects"
       }
     },
-    "processSection": {
-      "contentar": {
-        "title": "كيف نعمل",
-        "subtitle": "عملية بسيطة وشفافة من أول اتصال حتى التسليم.",
-        "steps": [
-          {
-            "number": "1",
-            "title": "التقييم",
-            "description": "نناقش احتياجاتك ونزور موقعك لفهم بيئتك ومتطلباتك."
-          },
-          {
-            "number": "2",
-            "title": "العرض",
-            "description": "تستلم عرضاً واضحاً يشمل النطاق والمعدات والأسعار—بدون مفاجآت."
-          },
-          {
-            "number": "3",
-            "title": "التنفيذ",
-            "description": "نركب ونضبط ونسلم الحل مع التوثيق والدعم."
-          }
-        ]
-      },
-      "contenten": {
-        "title": "How we work",
-        "subtitle": "A simple, transparent process from first contact to handover.",
-        "steps": [
-          {
-            "number": "1",
-            "title": "Assess",
-            "description": "We discuss your needs and visit your site to understand your environment and requirements."
-          },
-          {
-            "number": "2",
-            "title": "Quote",
-            "description": "You receive a clear proposal with scope, equipment (where relevant), and pricing—no surprises."
-          },
-          {
-            "number": "3",
-            "title": "Execute",
-            "description": "We install, configure, and hand over your solution with documentation and support."
-          }
-        ]
-      }
-    },
     "faqSection": {
       "contentar": {
         "title": "الأسئلة الشائعة",

@@ -1,7 +1,7 @@
 export const hero = {
-  title: "IT Infrastructure, CCTV Security, and Smart Monitoring Solutions for Businesses",
+  title: "IT Infrastructure, CCTV & Smart Monitoring for Businesses",
   subtitle:
-    "We help companies secure their facilities, stabilize their networks, and monitor their operations through modern infrastructure and smart monitoring tools.",
+    "Secure your sites, stabilize your networks, and monitor operations with practical B2B solutions.",
 } as const;
 
 /** Hero slider — paths under /public/images */
@@ -43,58 +43,42 @@ export const trustStrip = {
 
 export const servicesOverview = {
   title: "Our Services",
-  subtitle:
-    "Clear, reliable solutions for your business infrastructure and security. Scan what we offer below.",
+  subtitle: "Infrastructure and security solutions for businesses—explore the highlights below.",
   viewAllServices: "View all services",
 } as const;
 
 export const networkInfrastructure = {
   title: "Network Infrastructure",
   subtitle: "Technical expertise in business networking.",
-  items: [
-    "Office networking",
-    "Router and switch configuration",
-    "WiFi coverage optimization",
-    "Network troubleshooting",
-    "Business connectivity setup",
-  ],
+  items: ["Office networking", "Router and switch configuration", "WiFi coverage optimization"],
 } as const;
 
 export const cctvSection = {
   title: "CCTV & Surveillance Solutions",
   subtitle: "Security and visibility for your premises.",
-  items: [
-    "Camera installation",
-    "Security monitoring",
-    "Mobile camera access",
-    "Recording systems",
-    "Warehouse and office surveillance",
-  ],
+  items: ["Camera installation", "Security monitoring", "Recording systems"],
 } as const;
 
 export const businessMonitoringSection = {
   title: "Business Systems & Monitoring Tools",
   subtitle:
-    "We develop monitoring dashboards and internal tools that help companies track network status, camera systems, and operational alerts.",
+    "Dashboards and tools to track networks, cameras, and alerts—built for business operations.",
 } as const;
 
 export const smartMonitoringDashboard = {
   title: "Smart Monitoring Dashboard",
-  subtitle:
-    "A centralized monitoring system that integrates network monitoring, CCTV monitoring, device status tracking, and alerts and notifications.",
+  subtitle: "One place to see devices, cameras, and alerts as we roll out the product.",
   comingSoon:
-    "Our monitoring dashboard is currently under development and will soon allow clients to monitor their infrastructure and security systems from a centralized interface.",
+    "Under development: soon you’ll monitor infrastructure and security from one client dashboard.",
 } as const;
 
 export const dashboardFeatures = {
   title: "Dashboard Capabilities",
-  subtitle: "Potential features of the upcoming monitoring system.",
+  subtitle: "Planned highlights for the monitoring experience.",
   features: [
     { title: "Online / Offline Device Monitoring", icon: "device" },
     { title: "Camera Access", icon: "camera" },
     { title: "Alerts & Notifications", icon: "alert" },
-    { title: "Network Status Overview", icon: "network" },
-    { title: "Device Health Monitoring", icon: "health" },
   ],
 } as const;
 
@@ -106,81 +90,44 @@ export const technologyPartners = {
 
 export const howItWorks = {
   title: "How It Works",
-  subtitle: "Simple steps from request to support.",
+  subtitle: "Three steps from first contact to a working solution.",
   steps: [
-    { number: 1, title: "Request Service", description: "Get in touch via form, WhatsApp, or phone." },
-    { number: 2, title: "Site Visit", description: "We visit your location to assess and plan." },
-    { number: 3, title: "Installation", description: "We install and configure your solution." },
-    { number: 4, title: "Monitoring Setup / Support", description: "Ongoing support and monitoring as needed." },
+    { number: 1, title: "Request Service", description: "Reach us by form, WhatsApp, or phone." },
+    { number: 2, title: "Site Visit", description: "We assess your site and agree on scope." },
+    { number: 3, title: "Install & Support", description: "We install, configure, and stay available for support." },
   ],
 } as const;
 
 export const industriesServed = {
   title: "Industries we serve",
-  subtitle:
-    "We work with businesses across sectors—from clinics and offices to warehouses and retail.",
+  subtitle: "Clinics, offices, warehouses, retail, and more—B2B across sectors.",
   seeHowWeHelp: "See how we help",
   viewAllIndustries: "View all industries",
 } as const;
 
 export const whyChooseUs = {
   title: "Why choose TechRoom",
-  subtitle:
-    "We combine technical expertise with a practical, business-first approach.",
+  subtitle: "Technical depth with a practical, business-first mindset.",
   points: [
     {
       title: "Business-focused",
-      description:
-        "We work only with businesses. Our solutions are designed for clinics, offices, warehouses, retail, and logistics—not home use.",
+      description: "B2B only—solutions for clinics, offices, warehouses, and retail, not home use.",
     },
     {
       title: "Reliable support",
-      description:
-        "Clear response times and a single point of contact. When something breaks, you know who to call.",
+      description: "One point of contact and predictable response when issues arise.",
     },
     {
       title: "Transparent process",
-      description:
-        "From assessment to quote to installation—no hidden costs. We explain what we're doing and why.",
-    },
-    {
-      title: "Local presence",
-      description:
-        "Based in Alexandria, we can visit your site, understand your environment, and provide ongoing support when you need it.",
+      description: "Clear scope and pricing from assessment through installation.",
     },
   ],
 } as const;
 
 export const projectsPreview = {
   title: "Recent projects",
-  subtitle:
-    "See how we've helped businesses like yours with CCTV, networks, and IT support.",
+  subtitle: "Snapshots of CCTV, network, and IT work for businesses like yours.",
   viewAllProjects: "View all projects",
-} as const;
-
-export const processSection = {
-  title: "How we work",
-  subtitle: "A simple, transparent process from first contact to handover.",
-  steps: [
-    {
-      number: "1",
-      title: "Assess",
-      description:
-        "We discuss your needs and visit your site to understand your environment and requirements.",
-    },
-    {
-      number: "2",
-      title: "Quote",
-      description:
-        "You receive a clear proposal with scope, equipment (where relevant), and pricing—no surprises.",
-    },
-    {
-      number: "3",
-      title: "Execute",
-      description:
-        "We install, configure, and hand over your solution with documentation and support.",
-    },
-  ],
 } as const;
 
 export const faqSection = {
@@ -190,11 +137,9 @@ export const faqSection = {
 
 export const contactSection = {
   title: "Request a Free Consultation",
-  subtitle:
-    "Reach us by WhatsApp, email, or phone—or book a site visit. We'll get back to you quickly.",
+  subtitle: "WhatsApp, email, phone, or a site visit—we reply quickly.",
   formTitle: "Send us your details",
-  formSubtitle:
-    "We'll use this to prepare a tailored proposal and contact you.",
+  formSubtitle: "We use this to prepare a tailored proposal.",
   contactMethods: "Contact methods",
   whatsApp: "WhatsApp",
   email: "Email",
@@ -204,5 +149,5 @@ export const contactSection = {
 
 export const ctaAfterServices = {
   title: "Ready to get started?",
-  subtitle: "Request a service or book a site visit. We'll respond quickly.",
+  subtitle: "Request a service or book a site visit.",
 } as const;

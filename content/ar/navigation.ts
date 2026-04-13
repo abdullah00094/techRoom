@@ -1,3 +1,9 @@
+export const headerNavLinks = [
+  { href: "/", label: "الرئيسية" },
+  { href: "/services", label: "الخدمات" },
+  { href: "/contact", label: "اتصل بنا" },
+] as const;
+
 export const navLinks = [
   { href: "/", label: "الرئيسية" },
   { href: "/services", label: "الخدمات" },

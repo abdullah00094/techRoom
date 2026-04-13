@@ -10,7 +10,7 @@ interface CardProps {
 
 export function Card({ children, className = "", href }: CardProps) {
   const base =
-    "rounded-[var(--radius-lg)] border border-[var(--card-border)] bg-[var(--card-bg)] p-6 shadow-[var(--shadow)] transition hover:shadow-[var(--shadow-md)]";
+    "rounded-[var(--radius-lg)] border border-[var(--card-border)] bg-[var(--card-bg)] p-6 sm:p-7 shadow-[var(--shadow)] transition duration-200 hover:-translate-y-0.5 hover:shadow-[var(--shadow-md)]";
 
   if (href) {
     return (

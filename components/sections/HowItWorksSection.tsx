@@ -17,23 +17,23 @@ export function HowItWorksSection({ locale }: Props) {
         subtitle={content.subtitle}
       />
       <div className="relative">
-        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-8 sm:gap-10 sm:grid-cols-2 lg:grid-cols-3">
           {content.steps.map((step, i) => (
             <div key={step.number} className="relative">
               <div className="flex flex-col items-center text-center">
-                <div className="flex h-14 w-14 items-center justify-center rounded-full bg-[var(--accent)] text-lg font-bold text-white shadow-[var(--shadow-md)]">
+                <div className="flex h-14 w-14 items-center justify-center rounded-full bg-[var(--accent)] text-lg font-bold text-white shadow-[var(--shadow-md)] ring-4 ring-[var(--section-alt)]">
                   {step.number}
                 </div>
-                <h3 className="mt-4 font-semibold text-[var(--foreground)]">
+                <h3 className="mt-4 text-lg font-semibold text-[var(--foreground)]">
                   {step.title}
                 </h3>
-                <p className="mt-2 text-sm text-[var(--muted)]">
+                <p className="mt-2.5 max-w-sm text-sm leading-relaxed text-[var(--muted)]">
                   {step.description}
                 </p>
               </div>
               {i < content.steps.length - 1 && (
                 <div
-                  className="absolute top-7 left-[60%] hidden h-0.5 w-[80%] max-w-[120px] bg-[var(--card-border)] lg:block rtl:left-auto rtl:right-[60%]"
+                  className="absolute top-7 left-[60%] hidden h-0.5 w-[80%] max-w-[120px] bg-[var(--card-border)]/80 lg:block rtl:left-auto rtl:right-[60%]"
                   aria-hidden
                 />
               )}

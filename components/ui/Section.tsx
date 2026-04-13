@@ -21,7 +21,7 @@ export function Section({
   return (
     <section
       id={id}
-      className={`py-16 sm:py-20 lg:py-24 ${alt ? "bg-[var(--section-alt)]" : "bg-[var(--background)]"} ${className}`}
+      className={`fade-up py-14 sm:py-18 lg:py-22 ${alt ? "bg-[var(--section-alt)]" : "bg-[var(--background)]"} ${className}`}
     >
       <div
         className={`mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 ${wrapperClassName}`}
@@ -47,13 +47,15 @@ export function SectionHeader({
 }: SectionHeaderProps) {
   return (
     <div
-      className={`mb-10 sm:mb-12 lg:mb-14 ${centered ? "text-center max-w-3xl mx-auto" : ""} ${className}`}
+      className={`mb-9 sm:mb-11 lg:mb-12 ${centered ? "mx-auto max-w-3xl text-center" : ""} ${className}`}
     >
-      <h2 className="text-2xl font-bold tracking-tight text-[var(--foreground)] sm:text-3xl lg:text-4xl">
+      <h2 className="text-2xl font-bold tracking-tight text-[var(--foreground)] sm:text-3xl lg:text-[2.15rem]">
         {title}
       </h2>
       {subtitle && (
-        <p className="mt-3 text-lg text-[var(--muted)] sm:mt-4">{subtitle}</p>
+        <p className="mt-3 text-base leading-relaxed text-[var(--muted)] sm:mt-4 sm:text-lg">
+          {subtitle}
+        </p>
       )}
     </div>
   );

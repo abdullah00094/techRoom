@@ -17,17 +17,17 @@ export function IndustriesServed({ locale }: Props) {
   const content = contentByLocale[locale];
 
   return (
-    <Section id="industries">
+    <Section id="industries" className="py-10 sm:py-12 lg:py-14">
       <SectionHeader
         title={content.title}
         subtitle={content.subtitle}
       />
-      <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="grid gap-4 sm:gap-5 sm:grid-cols-2 lg:grid-cols-3">
         {industries.map((ind) => (
           <Link
             key={ind.id}
             href={localePath(`/industries/${ind.slug}`, locale)}
-            className="group rounded-[var(--radius-lg)] border border-[var(--card-border)] bg-[var(--card-bg)] p-5 shadow-[var(--shadow)] transition hover:shadow-[var(--shadow-md)] hover:border-[var(--accent)]/30"
+            className="group rounded-[var(--radius-lg)] border border-[var(--card-border)] bg-[var(--card-bg)] p-5 shadow-[var(--shadow)] transition duration-200 hover:-translate-y-0.5 hover:border-[var(--accent)]/30 hover:shadow-[var(--shadow-md)]"
           >
             <h3 className={`font-semibold text-[var(--foreground)] group-hover:text-[var(--accent)] transition ${locale === "ar" ? "text-end" : ""}`}>
               {ind.title}
@@ -41,7 +41,7 @@ export function IndustriesServed({ locale }: Props) {
           </Link>
         ))}
       </div>
-      <div className="mt-8 text-center">
+      <div className="mt-9 text-center">
         <Link
           href={localePath("/industries", locale)}
           className="text-sm font-semibold text-[var(--accent)] hover:underline"

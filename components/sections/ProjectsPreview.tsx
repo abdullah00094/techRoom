@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { Section, SectionHeader } from "@/components/ui/Section";
 import { Button } from "@/components/ui/Button";
 import type { Locale } from "@/lib/i18n";
@@ -16,19 +15,19 @@ type Props = { locale: Locale };
 export function ProjectsPreview({ locale }: Props) {
   const projects = projectsByLocale[locale];
   const content = contentByLocale[locale];
-  const featured = projects.slice(0, 3);
+  const featured = projects.slice(0, 2);
 
   return (
-    <Section id="projects">
+    <Section id="projects" className="pt-10 sm:pt-12 lg:pt-14">
       <SectionHeader
         title={content.title}
         subtitle={content.subtitle}
       />
-      <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+      <div className="grid gap-6 sm:gap-7 md:grid-cols-2">
         {featured.map((project) => (
           <article
             key={project.id}
-            className={`rounded-[var(--radius-lg)] border border-[var(--card-border)] bg-[var(--card-bg)] p-6 shadow-[var(--shadow)] ${locale === "ar" ? "text-end" : ""}`}
+            className={`rounded-[var(--radius-lg)] border border-[var(--card-border)] bg-[var(--card-bg)] p-6 sm:p-7 shadow-[var(--shadow)] transition duration-200 hover:-translate-y-0.5 hover:shadow-[var(--shadow-md)] ${locale === "ar" ? "text-end" : ""}`}
           >
             <span className="text-xs font-medium uppercase tracking-wide text-[var(--accent)]">
               {project.businessType}

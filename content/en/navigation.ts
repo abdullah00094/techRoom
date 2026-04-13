@@ -1,3 +1,10 @@
+/** Header + mobile menu (minimal); footer uses `navLinks`. */
+export const headerNavLinks = [
+  { href: "/", label: "Home" },
+  { href: "/services", label: "Services" },
+  { href: "/contact", label: "Contact" },
+] as const;
+
 export const navLinks = [
   { href: "/", label: "Home" },
   { href: "/services", label: "Services" },

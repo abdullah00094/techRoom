@@ -60,12 +60,12 @@ techroom/
 │   │   ├── HeroSection.tsx
 │   │   ├── TrustStrip.tsx
 │   │   ├── ServicesOverview.tsx
-│   │   ├── IndustriesServed.tsx
-│   │   ├── WhyChooseUs.tsx
-│   │   ├── ProjectsPreview.tsx
-│   │   ├── ProcessSection.tsx
+│   │   ├── CoreServicesDetails.tsx
+│   │   ├── SmartDashboardSection.tsx
+│   │   ├── TrustSection.tsx
+│   │   ├── FinalCTASection.tsx
 │   │   ├── FAQSection.tsx
-│   │   └── ContactSection.tsx
+│   │   └── …
 │   ├── ui/                        # Reusable UI primitives
 │   │   ├── Button.tsx
 │   │   ├── Card.tsx
@@ -147,14 +147,14 @@ techroom/
 | Order | Section | Component | Content Source | Anchor ID |
 |-------|---------|-----------|----------------|-----------|
 | 1 | Hero | `HeroSection` | `content/{locale}/home.ts` → `hero` | — |
-| 2 | Trust strip | `TrustStrip` | `content/{locale}/home.ts` → `trustStrip` | — |
-| 3 | Services overview | `ServicesOverview` | `content/{locale}/home.ts`, `services.ts` | `#services` |
-| 4 | Industries served | `IndustriesServed` | `content/{locale}/home.ts`, `industries.ts` | `#industries` |
-| 5 | Why choose us | `WhyChooseUs` | `content/{locale}/home.ts` → `whyChooseUs` | `#why-us` |
-| 6 | Projects preview | `ProjectsPreview` | `content/{locale}/projects.ts` | `#projects` |
-| 7 | Process (3 steps) | `ProcessSection` | `content/{locale}/home.ts` → `processSection` | `#process` |
-| 8 | FAQ | `FAQSection` | `content/{locale}/faq.ts` | `#faq` |
-| 9 | Contact / consultation | `ContactSection` | `content/{locale}/home.ts` → `contactSection` | `#contact` |
+| 2 | Services (+ core details) | `ServicesOverview` (includes `CoreServicesDetails`) | `home.ts`, `services.ts` (home shows 3 services) | `#services`, `#network-infrastructure`, … |
+| 3 | Why choose us | `WhyChooseUs` | `home.ts` → `whyChooseUs` | `#why-us` |
+| 4 | How it works | `HowItWorksSection` | `home.ts` → `howItWorks` | `#how-it-works` |
+| 5 | Trust / proof | `TrustSection` | partners, industries, projects | `#partners`, `#industries`, `#projects` |
+| 6 | Smart dashboard | `SmartDashboardSection` | `home.ts` | `#smart-dashboard` |
+| 7 | Final CTA + contact | `FinalCTASection` | `ctaAfterServices`, `contactSection` | `#contact`, `#cta-after-services`, `#site-visit` |
+
+*(Footer: `Footer` in `app/[locale]/layout.tsx`.)*
 
 ### Services Page (`/[locale]/services`)
 
@@ -240,7 +240,7 @@ techroom/
 | Element | Type | Description |
 |---------|------|-------------|
 | Logo | `Link` | TechRoom → `/[locale]` |
-| Nav links | `Link` × 6 | Home, Services, Industries, Projects, About, Contact |
+| Nav links | `Link` × 3 | Home, Services, Contact (`headerNavLinks` in `navigation.ts`; footer still lists full `navLinks`) |
 | Language switcher | `LanguageSwitcher` | EN ↔ العربية |
 | CTA button | `Button` (primary) | Request Free Consultation → `/contact` |
 | Mobile menu | `MobileNav` | Hamburger, slide-out panel |
@@ -274,14 +274,13 @@ techroom/
 | Component | Props | RTL Handling |
 |-----------|-------|--------------|
 | `HeroSection` | `locale` | `text-end`, `flex justify-end` for Arabic |
-| `TrustStrip` | `locale` | `flex-row-reverse` for Arabic |
-| `ServicesOverview` | `locale` | Icon direction, `flex-row-reverse` for "Learn more" |
-| `IndustriesServed` | `locale` | `text-end` on cards |
-| `WhyChooseUs` | `locale` | `text-end` on cards |
-| `ProjectsPreview` | `locale` | `text-end` on cards |
-| `ProcessSection` | `locale` | Centered (no change) |
-| `FAQSection` | `locale` | `flex-row-reverse`, `text-right` for accordion |
-| `ContactSection` | `locale` | Grid order swap for Arabic |
+| `ServicesOverview` | `locale` | Includes `CoreServicesDetails`; home shows 3 service cards |
+| `WhyChooseUs` | `locale` | `text-end` on cards for Arabic |
+| `HowItWorksSection` | `locale` | Step grid |
+| `TrustSection` | `locale` (+ optional slots) | Partners → industries → projects; nested sections RTL as before |
+| `SmartDashboardSection` | `locale` | Mixed RTL on cards / copy |
+| `FinalCTASection` | `locale` | Contact methods + form |
+| `TrustStrip` / `FAQSection` | `locale` | Available for reuse; not composed on the current home page |
 
 ---
 
@@ -514,14 +513,11 @@ npm run lint   # ESLint
 | Page | Section | Component |
 |------|---------|-----------|
 | Home | Hero | `HeroSection` |
-| Home | Trust strip | `TrustStrip` |
-| Home | Services | `ServicesOverview` |
-| Home | Industries | `IndustriesServed` |
-| Home | Why us | `WhyChooseUs` |
-| Home | Projects | `ProjectsPreview` |
-| Home | Process | `ProcessSection` |
-| Home | FAQ | `FAQSection` |
-| Home | Contact | `ContactSection` |
+| Home | Services (+ details) | `ServicesOverview` + `CoreServicesDetails` |
+| Home | Why us / How it works | `WhyChooseUs`, `HowItWorksSection` |
+| Home | Trust / proof | `TrustSection` |
+| Home | Smart dashboard | `SmartDashboardSection` |
+| Home | Final CTA + contact | `FinalCTASection` |
 | All | Header | `Header` |
 | All | Footer | `Footer` |
 | All | WhatsApp | `WhatsAppButton` |

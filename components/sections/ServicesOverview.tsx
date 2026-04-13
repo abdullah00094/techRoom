@@ -1,7 +1,7 @@
-import Link from "next/link";
 import { Section, SectionHeader } from "@/components/ui/Section";
 import { Card, CardTitle } from "@/components/ui/Card";
 import { Button } from "@/components/ui/Button";
+import { CoreServicesDetails } from "@/components/sections/CoreServicesDetails";
 import type { Locale } from "@/lib/i18n";
 import { localePath } from "@/lib/i18n";
 import { services as servicesEn } from "@/content/en/services";
@@ -41,21 +41,22 @@ const icons: Record<string, React.ReactNode> = {
 type Props = { locale: Locale };
 
 export function ServicesOverview({ locale }: Props) {
-  const services = servicesByLocale[locale];
+  const services = servicesByLocale[locale].slice(0, 3);
   const content = contentByLocale[locale];
   const cta = ctaByLocale[locale];
 
   return (
-    <Section id="services" alt>
+    <>
+    <Section id="services" alt className="pb-10 sm:pb-12 lg:pb-14">
       <SectionHeader
         title={content.title}
         subtitle={content.subtitle}
       />
-      <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+      <div className="grid gap-6 sm:gap-7 sm:grid-cols-2 lg:grid-cols-3">
         {services.map((service) => (
           <Card key={service.id} href={localePath(`/services/${service.slug}`, locale)}>
             <div className="flex flex-col h-full">
-              <div className="mb-4">{icons[service.id.split("-")[0]] ?? icons.support}</div>
+              <div className="mb-5">{icons[service.id.split("-")[0]] ?? icons.support}</div>
               <CardTitle as="h2">{service.title}</CardTitle>
               <p className="mt-2 flex-1 text-[var(--muted)]">
                 {service.shortDescription}
@@ -70,11 +71,13 @@ export function ServicesOverview({ locale }: Props) {
           </Card>
         ))}
       </div>
-      <div className="mt-10 text-center">
+      <div className="mt-11 text-center">
         <Button href={localePath("/services", locale)} variant="outline">
           {content.viewAllServices}
         </Button>
       </div>
     </Section>
+    <CoreServicesDetails locale={locale} />
+    </>
   );
 }

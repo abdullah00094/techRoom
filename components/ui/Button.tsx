@@ -8,11 +8,11 @@ const base =
 
 const variants: Record<ButtonVariant, string> = {
   primary:
-    "bg-[var(--accent)] text-white shadow-[var(--shadow-md)] hover:bg-[var(--accent-hover)] hover:shadow-[var(--shadow-lg)] active:scale-[0.98] px-6 py-3 text-base",
+    "bg-[var(--accent)] text-white shadow-[var(--shadow-md)] hover:-translate-y-0.5 hover:bg-[var(--accent-hover)] hover:shadow-[var(--shadow-lg)] active:translate-y-0 active:scale-[0.98] px-6 py-3 text-base",
   secondary:
-    "bg-[var(--primary)] text-[var(--primary-foreground)] shadow-[var(--shadow-md)] hover:opacity-90 active:scale-[0.98] px-6 py-3 text-base",
+    "bg-[var(--primary)] text-[var(--primary-foreground)] shadow-[var(--shadow-md)] hover:-translate-y-0.5 hover:opacity-90 active:translate-y-0 active:scale-[0.98] px-6 py-3 text-base",
   outline:
-    "border-2 border-[var(--primary)] text-[var(--primary)] bg-transparent hover:bg-[var(--primary)] hover:text-[var(--primary-foreground)] px-6 py-3 text-base",
+    "border-2 border-[var(--primary)] text-[var(--primary)] bg-transparent hover:-translate-y-0.5 hover:bg-[var(--primary)] hover:text-[var(--primary-foreground)] px-6 py-3 text-base",
   ghost:
     "text-[var(--primary)] hover:bg-[var(--section-alt)] px-4 py-2 text-base",
 };

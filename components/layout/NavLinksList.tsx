@@ -3,10 +3,10 @@
 import Link from "next/link";
 import type { Locale } from "@/lib/i18n";
 import { localePath } from "@/lib/i18n";
-import { navLinks } from "@/content/en/navigation";
-import { navLinks as navLinksAr } from "@/content/ar/navigation";
+import { headerNavLinks } from "@/content/en/navigation";
+import { headerNavLinks as headerNavLinksAr } from "@/content/ar/navigation";
 
-const navByLocale = { en: navLinks, ar: navLinksAr };
+const navByLocale = { en: headerNavLinks, ar: headerNavLinksAr };
 
 type Props = {
   locale: Locale;

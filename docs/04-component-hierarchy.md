@@ -21,7 +21,7 @@ Typical flow:
 - [`Header.tsx`](../components/layout/Header.tsx): top navigation, language switcher, desktop nav or mobile hamburger
 - [`MobileNav.tsx`](../components/layout/MobileNav.tsx): slide-over mobile navigation panel
 - [`Footer.tsx`](../components/layout/Footer.tsx): footer columns and WhatsApp CTA
-- [`NavLinksList.tsx`](../components/layout/NavLinksList.tsx): shared nav link renderer used by Header/MobileNav
+- [`NavLinksList.tsx`](../components/layout/NavLinksList.tsx): shared nav link renderer used by Header/MobileNav (uses `headerNavLinks` from `content/{locale}/navigation.ts`; footer uses full `navLinks`)
 
 ## `components/sections/` (page sections)
 
@@ -35,7 +35,8 @@ Examples:
 - [`HeroSection.tsx`](../components/sections/HeroSection.tsx)
 - [`ServicesOverview.tsx`](../components/sections/ServicesOverview.tsx)
 - [`FAQSection.tsx`](../components/sections/FAQSection.tsx)
-- [`ContactSection.tsx`](../components/sections/ContactSection.tsx)
+- [`FinalCTASection.tsx`](../components/sections/FinalCTASection.tsx) (home closing CTA + contact + form)
+- [`TrustSection.tsx`](../components/sections/TrustSection.tsx) (partners → industries → projects; optional slots), [`CoreServicesDetails.tsx`](../components/sections/CoreServicesDetails.tsx) (rendered after `ServicesOverview` on the home page), [`SmartDashboardSection.tsx`](../components/sections/SmartDashboardSection.tsx)
 
 ## `components/ui/` (primitives)
 

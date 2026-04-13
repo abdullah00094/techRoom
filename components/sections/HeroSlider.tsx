@@ -58,7 +58,7 @@ export function HeroSlider({ locale, slides }: Props) {
 
   return (
     <section
-      className="relative isolate min-h-[72vh] w-full overflow-hidden bg-black"
+      className="relative isolate min-h-[74vh] w-full overflow-hidden bg-black"
       aria-roledescription="carousel"
       aria-label={locale === "ar" ? "عرض الخدمات" : "Services highlights"}
     >
@@ -92,15 +92,15 @@ export function HeroSlider({ locale, slides }: Props) {
             </div>
             <div className={`pointer-events-none absolute inset-0 z-[1] ${gradientClass}`} aria-hidden />
             <div
-              className={`relative z-[2] flex min-h-[72vh] items-center px-4 py-20 sm:px-6 lg:px-8 ${
+            className={`relative z-[2] flex min-h-[74vh] items-center px-4 py-20 sm:px-6 lg:px-8 ${
                 locale === "ar" ? "justify-end text-end" : "justify-start text-start"
               }`}
             >
-              <div className="max-w-xl lg:max-w-2xl">
-                <h1 className="text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-5xl drop-shadow-sm">
+              <div className="max-w-xl lg:max-w-[42rem]">
+                <h1 className="text-3xl font-bold tracking-tight text-white sm:text-4xl lg:text-[3.35rem] lg:leading-tight drop-shadow-sm">
                   {slide.title}
                 </h1>
-                <p className="mt-4 text-lg text-white/90 sm:text-xl leading-relaxed">
+                <p className="mt-5 text-base leading-relaxed text-white/88 sm:text-lg lg:text-xl">
                   {slide.subtitle}
                 </p>
                 <span
@@ -130,7 +130,7 @@ export function HeroSlider({ locale, slides }: Props) {
         );
       })}
 
-      <div className="pointer-events-none absolute bottom-0 left-0 right-0 z-20 flex flex-col items-center gap-4 px-4 pb-6 sm:pb-8">
+      <div className="pointer-events-none absolute bottom-0 left-0 right-0 z-20 flex flex-col items-center gap-5 px-4 pb-6 sm:pb-8">
         <div
           className="pointer-events-auto flex justify-center gap-2"
           role="tablist"

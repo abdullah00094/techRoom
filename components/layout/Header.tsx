@@ -11,6 +11,7 @@ import { Button } from "@/components/ui/Button";
 import { MobileNav } from "./MobileNav";
 import { LanguageSwitcher } from "@/components/ui/LanguageSwitcher";
 import { NavLinksList } from "./NavLinksList";
+
 const ctaByLocale = { en: ctaEn, ar: ctaAr };
 
 type Props = { locale: Locale };
@@ -50,9 +51,9 @@ export function Header({ locale }: Props) {
 
   return (
     <header
-      className={`sticky top-0 z-40 w-full border-b border-[var(--card-border)] bg-[var(--background)]/95 backdrop-blur supports-[backdrop-filter]:bg-[var(--background)]/80 transition-shadow duration-200 ${scrolled ? "shadow-[var(--shadow)]" : ""}`}
+      className={`sticky top-0 z-40 w-full border-b border-[var(--card-border)]/80 bg-[var(--background)]/90 backdrop-blur-md supports-[backdrop-filter]:bg-[var(--background)]/75 transition-shadow duration-200 ${scrolled ? "shadow-[var(--shadow-md)]" : ""}`}
     >
-      <div className="mx-auto flex h-16 max-w-7xl items-center justify-between gap-4 px-4 sm:h-18 sm:px-6 lg:px-8">
+      <div className="mx-auto flex h-15 max-w-7xl items-center justify-between gap-4 px-4 sm:h-16 sm:px-6 lg:px-8">
         <Link
           href={localePath("/", locale)}
           className="shrink-0 focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--background)] rounded"
@@ -63,16 +64,16 @@ export function Header({ locale }: Props) {
             alt=""
             width={200}
             height={48}
-            className="h-9 w-auto sm:h-10"
+            className="h-8.5 w-auto sm:h-9.5"
             priority
           />
         </Link>
 
         {isDesktop ? (
-          <nav className="flex items-center gap-8" aria-label="Main navigation">
+          <nav className="flex items-center gap-6" aria-label="Main navigation">
             <NavLinksList
               locale={locale}
-              itemClassName="text-sm font-medium text-[var(--muted)] transition hover:text-[var(--foreground)] focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)] focus-visible:ring-offset-2 rounded px-1"
+              itemClassName="rounded px-1 text-sm font-medium text-[var(--muted)] transition hover:text-[var(--foreground)] focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)] focus-visible:ring-offset-2"
             />
           </nav>
         ) : null}
@@ -82,7 +83,7 @@ export function Header({ locale }: Props) {
           <Button
             href={localePath("/contact", locale)}
             variant="primary"
-            className="hidden sm:inline-flex text-sm py-2.5 px-4"
+            className="hidden sm:inline-flex text-sm"
           >
             {cta.requestService}
           </Button>
