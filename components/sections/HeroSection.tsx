@@ -43,7 +43,7 @@ export function HeroSection({ locale }: Props) {
           <div className={`mb-6 flex justify-center ${isRtl ? "lg:justify-start" : "lg:justify-start"}`}>
             <span className="inline-flex items-center gap-1.5 rounded-full border border-[#e60000]/30 bg-[#4b0000]/20 px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-[#ee1c24] backdrop-blur-md">
               <span className="h-1.5 w-1.5 rounded-full bg-[#e60000] animate-pulse" />
-              {isRtl ? "للشركات فقط — B2B" : "B2B Only — Professional"}
+              {isRtl ? "للشركات فقط — B2b" : "B2B Only — Professional"}
             </span>
           </div>
 
