@@ -53,7 +53,7 @@ export function MobileNav({ locale }: Props) {
             onClick={close}
           />
           <nav
-            className="fixed right-0 top-0 z-50 flex h-full min-h-[100dvh] w-full max-w-sm flex-col gap-1 border-l border-white/10 bg-black p-6 pt-20 shadow-2xl rtl:right-auto rtl:left-0 rtl:border-l-0 rtl:border-r"
+            className="fixed ltr:right-0 ltr:left-auto rtl:left-0 rtl:right-auto top-0 z-50 flex h-full min-h-[100dvh] w-full max-w-xs flex-col gap-1 ltr:border-l rtl:border-r border-[#1a1a1b] bg-[#0d0d0d] p-6 pt-20 shadow-2xl"
             aria-label={locale === "ar" ? "القائمة الرئيسية" : "Mobile navigation"}
           >
             <button
@@ -72,9 +72,9 @@ export function MobileNav({ locale }: Props) {
               onNavigate={close}
               itemClassName="rounded-lg px-4 py-3 text-lg font-medium text-white hover:bg-white/10 text-start"
             />
-            <div className="mt-4 flex flex-col gap-2 border-t border-white/15 pt-4">
+            <div className="mt-4 flex flex-col gap-2 border-t border-[#1a1a1b] pt-4">
               <Button
-                href={localePath("/contact", locale)}
+                href="#contact"
                 variant="primary"
                 className="w-full justify-center"
                 onClick={close}

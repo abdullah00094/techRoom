@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import type { Locale } from "@/lib/i18n";
 import { localePath } from "@/lib/i18n";
 import { navLinks } from "@/content/en/navigation";
@@ -19,15 +20,21 @@ export function Footer({ locale }: Props) {
   const waUrl = getWhatsAppUrl(locale);
 
   return (
-    <footer className="border-t border-[var(--card-border)] bg-[var(--section-alt)]">
+    <footer className="border-t border-[var(--card-border)] bg-[#0d0d0d]">
       <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
           <div className="sm:col-span-2 lg:col-span-1">
             <Link
               href={localePath("/", locale)}
-              className="text-xl font-bold tracking-tight text-[var(--primary)]"
+              className="inline-flex items-center shrink-0 focus:outline-none"
             >
-              TechRoom
+              <Image
+                src="/images/techroom-logo.png"
+                alt="TechRoom Logo"
+                width={36}
+                height={36}
+                className="h-8 w-auto object-contain filter contrast-125"
+              />
             </Link>
             <p className="mt-3 text-sm text-[var(--muted)] max-w-xs">
               {footer.tagline}
@@ -70,7 +77,7 @@ export function Footer({ locale }: Props) {
               </li>
               <li>
                 <Link
-                  href={localePath("/contact", locale)}
+                  href="#contact"
                   className="text-sm text-[var(--muted)] hover:text-[var(--foreground)] transition"
                 >
                   {footer.requestSiteVisit}

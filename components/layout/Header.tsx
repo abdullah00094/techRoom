@@ -56,15 +56,15 @@ export function Header({ locale }: Props) {
       <div className="mx-auto flex h-15 max-w-7xl items-center justify-between gap-4 px-4 sm:h-16 sm:px-6 lg:px-8">
         <Link
           href={localePath("/", locale)}
-          className="shrink-0 focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--background)] rounded"
+          className="shrink-0 focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)] focus-visible:ring-offset-2 focus-visible:ring-offset-[var(--background)] rounded flex items-center"
           aria-label={locale === "ar" ? "تيك روم — الصفحة الرئيسية" : "TechRoom Solutions — Home"}
         >
           <Image
             src="/images/techroom-logo.png"
-            alt=""
-            width={200}
-            height={48}
-            className="h-8.5 w-auto sm:h-9.5"
+            alt="TechRoom Logo"
+            width={42}
+            height={42}
+            className="h-10 w-auto sm:h-11 object-contain filter contrast-125"
             priority
           />
         </Link>
@@ -81,9 +81,9 @@ export function Header({ locale }: Props) {
         <div className="flex items-center gap-2 sm:gap-3">
           <LanguageSwitcher locale={locale} className="hidden sm:inline-flex" />
           <Button
-            href={localePath("/contact", locale)}
+            href="#contact"
             variant="primary"
-            className="hidden sm:inline-flex text-sm"
+            className="hidden sm:inline-flex text-sm animate-pulse-subtle"
           >
             {cta.requestService}
           </Button>

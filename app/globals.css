@@ -5,37 +5,45 @@
  * primary #E71D2B, background #0F0F0F, surface #1C1C1C, text #FFFFFF, textSecondary #BFBFBF, border #2A2A2A
  */
 :root {
-  --background: #0f0f0f;
+  --background: #0d0d0d;
   --foreground: #ffffff;
-  --muted: #bfbfbf;
+  --muted: #bdbdbd;
   /* Brand: use for outline/ghost links that reference --primary */
-  --primary: #e71d2b;
+  --primary: #e60000;
   --primary-foreground: #ffffff;
-  --surface: #1c1c1c;
-  --accent: #e71d2b;
-  --accent-hover: #c1121f;
-  --accent-light: #ff3b3b;
-  --card-bg: #1c1c1c;
-  --card-border: #2a2a2a;
-  --section-alt: #1c1c1c;
+  --surface: #121212;
+  --accent: #e60000;
+  --accent-hover: #ee1c24;
+  --accent-light: #ee1c24;
+  --card-bg: #121212;
+  --card-border: #1a1a1b;
+  --section-alt: #121212;
+  --maroon-glow: #4b0000;
   --radius: 0.75rem;
   --radius-lg: 1rem;
-  --shadow: 0 1px 3px 0 rgb(0 0 0 / 0.4), 0 1px 2px -1px rgb(0 0 0 / 0.4);
-  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.45), 0 2px 4px -2px rgb(0 0 0 / 0.45);
-  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.5), 0 4px 6px -4px rgb(0 0 0 / 0.5);
+  --shadow: 0 1px 3px 0 rgb(0 0 0 / 0.6), 0 1px 2px -1px rgb(0 0 0 / 0.6);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.7), 0 2px 4px -2px rgb(0 0 0 / 0.7);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.8), 0 4px 6px -4px rgb(0 0 0 / 0.8);
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-muted: var(--muted);
-  --color-primary: #e71d2b;
-  --color-primary-light: #ff3b3b;
-  --color-primary-dark: #c1121f;
+  --color-primary: var(--primary);
+  --color-primary-light: var(--accent-hover);
+  --color-primary-dark: var(--maroon-glow);
   --color-surface: var(--surface);
-  --color-text-secondary: #bfbfbf;
-  --color-border: #2a2a2a;
+  --color-text-secondary: var(--muted);
+  --color-border: var(--card-border);
   --font-sans: var(--font-plus-jakarta);
+
+  --animate-marquee: marquee 30s linear infinite;
+
+  @keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
 }
 
 * {
@@ -79,4 +87,12 @@ a:focus-visible,
 button:focus-visible {
   outline: 2px solid var(--accent);
   outline-offset: 2px;
+}
+
+.animate-marquee {
+  width: max-content;
+}
+
+.animate-marquee-paused:hover .animate-marquee {
+  animation-play-state: paused;
 }

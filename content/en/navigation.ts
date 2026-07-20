@@ -1,17 +1,13 @@
 /** Header + mobile menu (minimal); footer uses `navLinks`. */
 export const headerNavLinks = [
-  { href: "/", label: "Home" },
-  { href: "/services", label: "Services" },
-  { href: "/contact", label: "Contact" },
+  { href: "#hero", label: "Home" },
+  { href: "#services", label: "Services" },
+  { href: "#why-us", label: "Why Us" },
+  { href: "#dashboard", label: "Dashboard" },
+  { href: "#contact", label: "Contact" },
 ] as const;
 
-export const navLinks = [
-  { href: "/", label: "Home" },
-  { href: "/services", label: "Services" },
-  { href: "/projects", label: "Projects" },
-  { href: "/partners", label: "Partners" },
-  { href: "/contact", label: "Contact" },
-] as const;
+export const navLinks = headerNavLinks;
 
 export const whatsappNumber = "201234567890";
 export const whatsappMessage =

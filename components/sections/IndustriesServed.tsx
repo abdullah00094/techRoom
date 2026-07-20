@@ -1,7 +1,5 @@
-import Link from "next/link";
 import { Section, SectionHeader } from "@/components/ui/Section";
 import type { Locale } from "@/lib/i18n";
-import { localePath } from "@/lib/i18n";
 import { industries as industriesEn } from "@/content/en/industries";
 import { industries as industriesAr } from "@/content/ar/industries";
 import { industriesServed as contentEn } from "@/content/en/home";
@@ -17,37 +15,25 @@ export function IndustriesServed({ locale }: Props) {
   const content = contentByLocale[locale];
 
   return (
-    <Section id="industries" className="py-10 sm:py-12 lg:py-14">
+    <Section id="industries" className="py-10 sm:py-12 lg:py-14 bg-[#0d0d0d]">
       <SectionHeader
         title={content.title}
         subtitle={content.subtitle}
       />
-      <div className="grid gap-4 sm:gap-5 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="grid gap-4 sm:gap-5 sm:grid-cols-2 lg:grid-cols-3 max-w-7xl mx-auto">
         {industries.map((ind) => (
-          <Link
+          <div
             key={ind.id}
-            href={localePath(`/industries/${ind.slug}`, locale)}
-            className="group rounded-[var(--radius-lg)] border border-[var(--card-border)] bg-[var(--card-bg)] p-5 shadow-[var(--shadow)] transition duration-200 hover:-translate-y-0.5 hover:border-[var(--accent)]/30 hover:shadow-[var(--shadow-md)]"
+            className="rounded-[var(--radius-lg)] border border-[var(--card-border)] bg-[var(--card-bg)] p-5 shadow-[var(--shadow)] transition duration-200 hover:-translate-y-0.5 hover:border-[var(--accent)]/30 hover:shadow-[var(--shadow-md)]"
           >
-            <h3 className={`font-semibold text-[var(--foreground)] group-hover:text-[var(--accent)] transition ${locale === "ar" ? "text-end" : ""}`}>
+            <h3 className={`font-semibold text-white transition ${locale === "ar" ? "text-end" : ""}`}>
               {ind.title}
             </h3>
-            <p className={`mt-1 text-sm text-[var(--muted)] line-clamp-2 ${locale === "ar" ? "text-end" : ""}`}>
+            <p className={`mt-2 text-sm text-[var(--muted)] line-clamp-3 ${locale === "ar" ? "text-end" : ""}`}>
               {ind.shortDescription}
             </p>
-            <span className={`mt-2 inline-block text-sm font-medium text-[var(--accent)] ${locale === "ar" ? "flex flex-row-reverse" : ""}`}>
-              {content.seeHowWeHelp} →
-            </span>
-          </Link>
+          </div>
         ))}
-      </div>
-      <div className="mt-9 text-center">
-        <Link
-          href={localePath("/industries", locale)}
-          className="text-sm font-semibold text-[var(--accent)] hover:underline"
-        >
-          {content.viewAllIndustries}
-        </Link>
       </div>
     </Section>
   );

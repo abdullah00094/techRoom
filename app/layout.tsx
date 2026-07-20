@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Plus_Jakarta_Sans } from "next/font/google";
+import { DirManager } from "@/components/utils/DirManager";
 import "./globals.css";
 
 const plusJakarta = Plus_Jakarta_Sans({
@@ -15,6 +16,11 @@ export const metadata: Metadata = {
   },
   description:
     "TechRoom provides CCTV installation, network setup, and IT support for businesses in Alexandria, Egypt. Secure, reliable, professional. Request a free consultation.",
+  icons: {
+    icon: "/images/techroom-logo.png",
+    shortcut: "/images/techroom-logo.png",
+    apple: "/images/techroom-logo.png",
+  },
 };
 
 export default function RootLayout({
@@ -25,6 +31,8 @@ export default function RootLayout({
   return (
     <html lang="en" dir="ltr" className={plusJakarta.variable} suppressHydrationWarning>
       <head>
+        <link rel="icon" href="/images/techroom-logo.png" />
+        <link rel="apple-touch-icon" href="/images/techroom-logo.png" />
         <script
           dangerouslySetInnerHTML={{
             __html: `
@@ -47,6 +55,7 @@ export default function RootLayout({
         />
       </head>
       <body className="min-h-screen bg-[var(--background)] text-[var(--foreground)] font-sans antialiased">
+        <DirManager />
         {children}
       </body>
     </html>

@@ -1,16 +1,12 @@
 export const headerNavLinks = [
-  { href: "/", label: "الرئيسية" },
-  { href: "/services", label: "الخدمات" },
-  { href: "/contact", label: "اتصل بنا" },
+  { href: "#hero", label: "الرئيسية" },
+  { href: "#services", label: "الخدمات" },
+  { href: "#why-us", label: "لماذا تيك روم" },
+  { href: "#dashboard", label: "لوحة التحكم" },
+  { href: "#contact", label: "اتصل بنا" },
 ] as const;
 
-export const navLinks = [
-  { href: "/", label: "الرئيسية" },
-  { href: "/services", label: "الخدمات" },
-  { href: "/projects", label: "المشاريع" },
-  { href: "/partners", label: "الشركاء" },
-  { href: "/contact", label: "اتصل بنا" },
-] as const;
+export const navLinks = headerNavLinks;
 
 export const whatsappNumber = "201234567890";
 export const whatsappMessage =

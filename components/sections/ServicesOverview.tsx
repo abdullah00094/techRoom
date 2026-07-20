@@ -1,19 +1,15 @@
+"use client";
+
 import { Section, SectionHeader } from "@/components/ui/Section";
 import { Card, CardTitle } from "@/components/ui/Card";
-import { Button } from "@/components/ui/Button";
-import { CoreServicesDetails } from "@/components/sections/CoreServicesDetails";
 import type { Locale } from "@/lib/i18n";
-import { localePath } from "@/lib/i18n";
 import { services as servicesEn } from "@/content/en/services";
 import { services as servicesAr } from "@/content/ar/services";
 import { servicesOverview as contentEn } from "@/content/en/home";
 import { servicesOverview as contentAr } from "@/content/ar/home";
-import { cta as ctaEn } from "@/content/en/common";
-import { cta as ctaAr } from "@/content/ar/common";
 
 const servicesByLocale = { en: servicesEn, ar: servicesAr };
 const contentByLocale = { en: contentEn, ar: contentAr };
-const ctaByLocale = { en: ctaEn, ar: ctaAr };
 
 const icons: Record<string, React.ReactNode> = {
   cctv: (
@@ -41,43 +37,59 @@ const icons: Record<string, React.ReactNode> = {
 type Props = { locale: Locale };
 
 export function ServicesOverview({ locale }: Props) {
-  const services = servicesByLocale[locale].slice(0, 3);
+  const services = servicesByLocale[locale];
   const content = contentByLocale[locale];
-  const cta = ctaByLocale[locale];
+  const isRtl = locale === "ar";
 
   return (
-    <>
-    <Section id="services" alt className="pb-10 sm:pb-12 lg:pb-14">
+    <Section id="services" className="py-20 bg-[#0d0d0d]">
       <SectionHeader
         title={content.title}
         subtitle={content.subtitle}
       />
-      <div className="grid gap-6 sm:gap-7 sm:grid-cols-2 lg:grid-cols-3">
-        {services.map((service) => (
-          <Card key={service.id} href={localePath(`/services/${service.slug}`, locale)}>
-            <div className="flex flex-col h-full">
-              <div className="mb-5">{icons[service.id.split("-")[0]] ?? icons.support}</div>
-              <CardTitle as="h2">{service.title}</CardTitle>
-              <p className="mt-2 flex-1 text-[var(--muted)]">
-                {service.shortDescription}
-              </p>
-              <span className={`mt-4 inline-flex items-center text-sm font-medium text-[var(--accent)] ${locale === "ar" ? "flex-row-reverse" : ""}`}>
-                {cta.learnMore}
-                <svg className={`h-4 w-4 ${locale === "ar" ? "ml-0 mr-1 rotate-180" : "ml-1"}`} fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                </svg>
-              </span>
-            </div>
-          </Card>
-        ))}
-      </div>
-      <div className="mt-11 text-center">
-        <Button href={localePath("/services", locale)} variant="outline">
-          {content.viewAllServices}
-        </Button>
+      <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 max-w-7xl mx-auto">
+        {services.map((service) => {
+          const iconKey = service.id.split("-")[0];
+          return (
+            <Card
+              key={service.id}
+              className="flex flex-col h-full bg-[#121212] border border-[#1a1a1b] hover:border-[#e60000]/40 transition-all duration-300 rounded-2xl p-6 sm:p-7 group shadow-lg"
+            >
+              <div className="flex flex-col h-full">
+                {/* Icon wrapper with glow */}
+                <div className="mb-6 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-[#4b0000]/20 border border-[#e60000]/25 group-hover:bg-[#e60000]/10 group-hover:border-[#e60000]/45 transition-colors duration-300">
+                  {icons[iconKey] ?? icons.support}
+                </div>
+
+                <CardTitle as="h3" className="text-xl font-bold text-white mb-3">
+                  {service.title}
+                </CardTitle>
+
+                <p className="text-sm leading-relaxed text-[#bdbdbd] mb-6 flex-1">
+                  {service.shortDescription}
+                </p>
+
+                {/* Features bullet list inside card */}
+                <div className="border-t border-[#1a1a1b] pt-5">
+                  <ul className="space-y-3.5">
+                    {service.whatsIncluded.slice(0, 4).map((item, idx) => (
+                      <li
+                        key={idx}
+                        className={`flex gap-3 text-xs leading-normal text-[#bdbdbd] ${
+                          isRtl ? "flex-row-reverse text-right" : "text-left"
+                        }`}
+                      >
+                        <span className="text-[#e60000] font-bold shrink-0">✓</span>
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+            </Card>
+          );
+        })}
       </div>
     </Section>
-    <CoreServicesDetails locale={locale} />
-    </>
   );
 }

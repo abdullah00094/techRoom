@@ -1,8 +1,6 @@
-import Link from "next/link";
 import { Section, SectionHeader } from "@/components/ui/Section";
 import { CTAButtons } from "@/components/cta/CTAButtons";
 import { ContactForm } from "@/components/forms/ContactForm";
-import { localePath } from "@/lib/i18n";
 import { contactEmail, contactPhone } from "@/content/en/navigation";
 import type { Locale } from "@/lib/i18n";
 import { ctaAfterServices as ctaAfterEn } from "@/content/en/home";
@@ -68,12 +66,12 @@ export function FinalCTASection({ locale }: Props) {
               </a>
             </li>
             <li>
-              <Link
-                href={localePath("/contact", locale) + "#site-visit"}
+              <a
+                href="#site-visit"
                 className="inline-flex items-center gap-2 font-medium text-[var(--muted)] transition hover:text-[var(--foreground)]"
               >
                 {content.bookSiteVisit}
-              </Link>
+              </a>
             </li>
           </ul>
         </div>

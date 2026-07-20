@@ -1,7 +1,5 @@
 import { Section, SectionHeader } from "@/components/ui/Section";
-import { Button } from "@/components/ui/Button";
 import type { Locale } from "@/lib/i18n";
-import { localePath } from "@/lib/i18n";
 import { projects as projectsEn } from "@/content/en/projects";
 import { projects as projectsAr } from "@/content/ar/projects";
 import { projectsPreview as contentEn } from "@/content/en/home";
@@ -15,10 +13,10 @@ type Props = { locale: Locale };
 export function ProjectsPreview({ locale }: Props) {
   const projects = projectsByLocale[locale];
   const content = contentByLocale[locale];
-  const featured = projects.slice(0, 2);
+  const featured = projects.slice(0, 4); // Show up to 4 projects for richer content on the single landing page
 
   return (
-    <Section id="projects" className="pt-10 sm:pt-12 lg:pt-14">
+    <Section id="projects" className="pt-10 sm:pt-12 lg:pt-14 max-w-7xl mx-auto">
       <SectionHeader
         title={content.title}
         subtitle={content.subtitle}
@@ -43,11 +41,6 @@ export function ProjectsPreview({ locale }: Props) {
             </p>
           </article>
         ))}
-      </div>
-      <div className="mt-10 text-center">
-        <Button href={localePath("/projects", locale)} variant="outline">
-          {content.viewAllProjects}
-        </Button>
       </div>
     </Section>
   );

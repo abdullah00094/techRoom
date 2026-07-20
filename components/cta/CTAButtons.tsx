@@ -1,6 +1,5 @@
 import { Button } from "@/components/ui/Button";
 import type { Locale } from "@/lib/i18n";
-import { localePath } from "@/lib/i18n";
 import { getWhatsAppUrl } from "@/lib/whatsapp";
 import { cta as ctaEn } from "@/content/en/common";
 import { cta as ctaAr } from "@/content/ar/common";
@@ -37,10 +36,10 @@ export function CTAButtons({
     return (
       <div className={`flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center sm:gap-4 ${className}`.trim()}>
         <div className="flex flex-wrap gap-3">
-          <Button href={localePath("/contact", locale)} variant="primary">
+          <Button href="#contact" variant="primary">
             {cta.requestService}
           </Button>
-          <Button href={localePath("/contact", locale) + "#site-visit"} variant="primary">
+          <Button href="#site-visit" variant="primary">
             {cta.bookSiteVisit}
           </Button>
         </div>
@@ -54,7 +53,7 @@ export function CTAButtons({
   return (
     <div className={`${flex} ${className}`.trim()}>
       {primary && (
-        <Button href={localePath("/contact", locale)} variant="primary">
+        <Button href="#contact" variant="primary">
           {cta.requestConsultation}
         </Button>
       )}
@@ -64,7 +63,7 @@ export function CTAButtons({
         </Button>
       )}
       {siteVisit && (
-        <Button href={localePath("/contact", locale) + "#site-visit"} variant="outline">
+        <Button href="#site-visit" variant="outline">
           {cta.requestSiteVisit}
         </Button>
       )}
